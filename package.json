@@ -1,11 +1,17 @@
 {
-  "name": "shops-vue-components",
+  "name": "@shops/vue-components",
   "version": "0.1.0",
-  "private": true,
+  "description": "Vue component framework for the web client",
   "main": "dist/shops-vue-components.common.js",
   "scripts": {
     "build": "vue-cli-service build --target lib src/components/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.datsite.eu:Shops/vue-components.git"
+  },
+  "author": "Lucien Le Roux",
+  "license": "ISC",
   "peerDependencies": {
     "vue": "^2.5.17",
     "@fortawesome/free-regular-svg-icons": "^5.5.0",
