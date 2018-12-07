@@ -2,9 +2,9 @@
   "name": "@shops/vue-components",
   "version": "0.1.1",
   "description": "Vue component framework for the web client",
-  "main": "dist/shops-vue-components.common.js",
+  "main": "dist/@shops/vue-components.common.js",
   "scripts": {
-    "build": "vue-cli-service build --target lib src/index.js"
+	"build": "vue-cli-service build --target lib src/index.js"
   },
   "repository": {
     "type": "git",
