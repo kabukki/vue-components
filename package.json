@@ -1,6 +1,6 @@
 {
   "name": "@shops/vue-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vue component framework for the web client",
   "main": "dist/shops-vue-components.common.js",
   "scripts": {
