@@ -1,5 +1,8 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
 	mode: 'production',
@@ -33,6 +36,8 @@ module.exports = {
 		}, {
 			test: /\.scss$/,
 			use: [{
+				loader: MiniCssExtractPlugin.loader
+			}, {
 				loader: 'css-loader'
 			}, {
 				loader: 'sass-loader'
@@ -40,6 +45,19 @@ module.exports = {
 		}]
 	},
 	plugins: [
-		new VueLoaderPlugin()
-	]
+		new VueLoaderPlugin(),
+		new MiniCssExtractPlugin({
+			filename: 'shops-vue-components.css'
+		})
+	],
+	optimization: {
+		minimizer: [
+			new TerserPlugin({
+				cache: true,
+				parallel: true,
+				sourceMap: true
+			}),
+			new OptimizeCssAssetsPlugin()
+		]
+	}
 };
