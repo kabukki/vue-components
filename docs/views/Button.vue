@@ -67,7 +67,7 @@
 		<b>TODO</b> code excerpt
 		<hr>
 		<h2>Props</h2>
-		<h3>color <small>String</small></h3>
+		<h3>color <small><code>String</code></small></h3>
 		<p>default: <i>none</i></p>
 		<p>one of: 'red', 'green', 'yellow', 'blue', 'purple', 'cyan'</p>
 		<h3>outline <small><code>Boolean</code></small></h3>

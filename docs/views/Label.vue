@@ -1,19 +1,26 @@
 <template>
 	<div>
 		<h1>Label</h1>
-		<p>x</p>
-		<SLabel color="red">Lorem</SLabel>
-		<SLabel color="green">Lorem</SLabel>
-		<SLabel color="yellow">Lorem</SLabel>
-		<SLabel color="blue">Lorem</SLabel>
-		<SLabel color="purple">Lorem</SLabel>
-		<SLabel color="cyan">Lorem</SLabel>
+		<p>Lorem ipsum dolor sit amet</p>
 		<hr>
-		<SLabel color="success">Lorem</SLabel>
-		<SLabel color="warning">Lorem</SLabel>
-		<SLabel color="error">Lorem</SLabel>
+		<h2>Examples</h2>
+		<div class="flex">
+			<SLabel color="red">Red</SLabel>
+			<SLabel color="green">Green</SLabel>
+			<SLabel color="yellow">Yellow</SLabel>
+			<SLabel color="blue">Blue</SLabel>
+			<SLabel color="purple">Purple</SLabel>
+			<SLabel color="cyan">Cyan</SLabel>
+			<SLabel color="success">Success</SLabel>
+			<SLabel color="warning">Warning</SLabel>
+			<SLabel color="error">Error</SLabel>
+		</div>
+		<hr>
+		<h2>Usage</h2>
+		<b>TODO</b> code excerpt
+		<hr>
 		<h2>Props</h2>
-		<h3>color <small>String</small></h3>
+		<h3>color <small><code>String</code></small></h3>
 		<p>default: 'purple'</p>
 		<p>one of:
 			<ul>
@@ -23,3 +30,16 @@
 		</p>
 	</div>
 </template>
+<style lang="scss" scoped>
+@import 'vars';
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+code {
+	background-color: $grey-light;
+	padding: 4px;
+	font-weight: normal;
+}
+</style>
