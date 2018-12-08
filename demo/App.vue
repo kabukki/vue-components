@@ -1,70 +1,84 @@
 <template>
 	<div id="app">
-		<h1>Alert</h1>
-		<p>Lorem ipsum dolor sit amet</p>
-		<SAlert type="success">Lorem ipsum dolor sit amet</SAlert>
-		<SAlert type="warning">Lorem ipsum dolor sit amet</SAlert>
-		<SAlert type="error">Lorem ipsum dolor sit amet</SAlert>
-		<h2>Usage</h2>
-		<b>TODO</b> code excerpt
-		<h2>Props</h2>
-		<h3>type <small>String</small></h3>
-		<p>default: 'error'</p>
-		<p>one of: 'success', 'warning', 'error'</p>
-
-		<h1>Avatar</h1>
-		<p>An avatar is a styled img tag with additional properties.</p>
-		<SAvatar src=""/>
-		<SAvatar src="" hoverable/>
-		<SAvatar src="" :size="80"/>
-		<h2>Props</h2>
-		<h3>hoverable <small>Boolean</small></h3>
-		<p>default: false</p>
-		<h3>size <small>Number</small></h3>
-		<p>default: 40</p>
-
-		<h1>Banner</h1>
-		<p>x</p>
-		<SBanner>Lorem ipsum</SBanner>
-		<SBanner color="red">Lorem ipsum</SBanner>
-		<SBanner color="green">Lorem ipsum</SBanner>
-		<SBanner color="yellow">Lorem ipsum</SBanner>
-		<SBanner color="blue">Lorem ipsum</SBanner>
-		<h2>Props</h2>
-		<h3>color <small>String</small></h3>
-		<p>default: grey</p>
-		<p>one of: 'red', 'green', 'yellow', 'blue'</p>
-		<p>Gradient color</p>
-		<h3>image <small>String</small></h3>
-		<p>default: </p>
-		<p>Background image</p>
-
-		<h1>Label</h1>
-		<p>x</p>
-		<SLabel color="red">Lorem</SLabel>
-		<SLabel color="green">Lorem</SLabel>
-		<SLabel color="yellow">Lorem</SLabel>
-		<SLabel color="blue">Lorem</SLabel>
-		<SLabel color="purple">Lorem</SLabel>
-		<SLabel color="cyan">Lorem</SLabel>
-		<hr>
-		<SLabel color="success">Lorem</SLabel>
-		<SLabel color="warning">Lorem</SLabel>
-		<SLabel color="error">Lorem</SLabel>
-		<h2>Props</h2>
-		<h3>color <small>String</small></h3>
-		<p>default: 'purple'</p>
-		<p>one of:
-			<ul>
-				<li>Presets: 'success', 'warning', 'error'</li>
-				<li>Base colors: 'red', 'green', 'yellow', 'blue', 'purple', 'cyan' with white text (<b>TODO</b> define hues for these colors)</li>
-			</ul>
-		</p>
+		<header>
+			<router-link to="/">
+				<h1>Shops Vue Components</h1>
+			</router-link>
+		</header>
+		<main>
+			<nav>
+				<router-link :to="{ name: link.name }" active-class="active" v-for="link in links" :key="link.name">
+					{{ link.title }}
+				</router-link>
+			</nav>
+			<div class="content">
+				<router-view></router-view>
+			</div>
+		</main>
 	</div>
 </template>
-<style>
+<script>
+export default {
+	data () {
+		return {
+			links: [
+				{ title: 'Alert', name: 'alert' },
+				{ title: 'Avatar', name: 'avatar' },
+				{ title: 'Banner', name: 'banner' },
+				{ title: 'Button', name: 'button' },
+				{ title: 'Card', name: 'card' },
+				{ title: 'Checkbox', name: 'checkbox' },
+				{ title: 'Input', name: 'input' },
+				{ title: 'Label', name: 'label' }
+			]
+		};
+	}	
+};
+</script>
+
+<style lang="scss">
+// TODO appliquer ca a la librairie de base
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i');
+@import 'vars';
+
+html { background-color: hsl(210, 16, 97); }
+body { margin: 0; font-family: Roboto; }
+html, body, #app {
+	height: 100%;
+}
+
 #app {
-	font-family: Arial;
-	background-color: hsl(210, 16, 97);
+	display: flex;
+	flex-direction: column;
+
+	> header {
+		background-color: $grey;
+		color: $grey-lightest;
+		padding: 12px;
+	}
+	> main {
+		flex: 1 1 auto;
+		display: flex;
+
+		> nav {
+			flex: 0 0 auto;	
+			background-color: $grey-light;
+
+			> a {
+				display: block;
+				padding: 12px;
+				min-width: 120px;
+
+				&.active {
+					background-color: $purple;
+				}
+			}
+		}
+		> .content {
+			flex: 1 1 auto;
+			padding: 24px;
+			overflow: auto;
+		}
+	}
 }
 </style>

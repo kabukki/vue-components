@@ -2,25 +2,13 @@
   "name": "@shops/vue-components",
   "version": "0.1.5",
   "description": "Vue component framework for the web client",
-  "main": "dist/shops-vue-components.js",
-  "scripts": {
-	"build": "webpack --config build/webpack.config.js",
-	"demo": "vue-cli-service serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@gitlab.datsite.eu:Shops/vue-components.git"
-  },
   "author": "Lucien Le Roux",
-  "license": "ISC",
-  "peerDependencies": {
-    "@fortawesome/free-regular-svg-icons": "^5.5.0",
-    "@fortawesome/free-solid-svg-icons": "^5.5.0",
-    "@fortawesome/vue-fontawesome": "^0.1.3",
-    "vue": "^2.5.17"
+  "scripts": {
+    "build": "webpack --config build/webpack.config.js",
+    "demo": "vue-cli-service serve"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.9",
+	"@fortawesome/fontawesome-svg-core": "^1.2.9",
     "@fortawesome/free-regular-svg-icons": "^5.5.0",
     "@fortawesome/free-solid-svg-icons": "^5.5.0",
     "@fortawesome/vue-fontawesome": "^0.1.3",
@@ -33,8 +21,21 @@
     "terser-webpack-plugin": "^1.1.0",
     "vue": "^2.5.18",
     "vue-loader": "^15.4.2",
+	"vue-router": "^3.0.1",
     "vue-template-compiler": "^2.5.18",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2"
+  },
+  "license": "ISC",
+  "main": "dist/shops-vue-components.js",
+  "peerDependencies": {
+    "@fortawesome/free-regular-svg-icons": "^5.5.0",
+    "@fortawesome/free-solid-svg-icons": "^5.5.0",
+    "@fortawesome/vue-fontawesome": "^0.1.3",
+    "vue": "^2.5.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.datsite.eu:Shops/vue-components.git"
   }
 }
