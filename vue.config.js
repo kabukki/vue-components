@@ -3,11 +3,11 @@ const path = require('path');
 module.exports = {
 	configureWebpack: {
 		entry: {
-			app: './demo/main.js'
+			app: './docs/main.js'
 		},
 		resolve: {
 			alias: {
-				'@': path.resolve(__dirname, './demo'),
+				'@': path.resolve(__dirname, './docs'),
 				'vars': path.resolve(__dirname, './src/scss/_variables.scss')
 			}
 		}

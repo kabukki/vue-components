@@ -1,6 +1,7 @@
 <template>
 	<div id="app">
 		<header>
+			<img id="logo" src="@/assets/icon-purple.png" alt="logo">
 			<router-link to="/">
 				<h1>Shops Vue Components</h1>
 			</router-link>
@@ -37,12 +38,8 @@ export default {
 </script>
 
 <style lang="scss">
-// TODO appliquer ca a la librairie de base
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i');
 @import 'vars';
 
-html { background-color: hsl(210, 16, 97); }
-body { margin: 0; font-family: Roboto; }
 html, body, #app {
 	height: 100%;
 }
@@ -52,9 +49,17 @@ html, body, #app {
 	flex-direction: column;
 
 	> header {
+		display: flex;
+		align-items: center;
 		background-color: $grey;
-		color: $grey-lightest;
 		padding: 12px;
+		flex-shrink: 0;
+
+		#logo {
+			display: block;
+			height: 50px;
+			margin-right: 12px;
+		}
 	}
 	> main {
 		flex: 1 1 auto;
@@ -71,6 +76,7 @@ html, body, #app {
 
 				&.active {
 					background-color: $purple;
+					color: $grey-lightest;
 				}
 			}
 		}
