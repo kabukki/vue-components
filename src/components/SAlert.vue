@@ -37,7 +37,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import '@/scss/variables.scss';
+@import '@/scss/_variables';
 
 .s-alert {
 	display: flex;

@@ -4,7 +4,7 @@
 	</ul>
 </template>
 <style lang="scss" scoped>
-@import '@/scss/variables.scss';
+@import '@/scss/_variables';
 
 .s-list {
 	padding: 0;

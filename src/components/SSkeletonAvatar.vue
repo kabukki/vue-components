@@ -30,8 +30,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import '@/scss/variables.scss';
-@import '@/scss/mixins.scss';
+@import '@/scss/_variables';
+@import '@/scss/_mixins';
 
 .s-skeleton-avatar {
 	@include skeleton-element;

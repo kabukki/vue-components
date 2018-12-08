@@ -1,6 +1,6 @@
 <script>
-import { faSquare } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faSquare } from '@fortawesome/free-regular-svg-icons';
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import Colorable from '@/mixins/Colorable';
 
@@ -73,7 +73,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import '@/scss/variables.scss';
+@import '@/scss/_variables';
 
 .s-checkbox {
 	display: flex;

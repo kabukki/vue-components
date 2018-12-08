@@ -1,5 +1,5 @@
-@import './variables.scss';
-@import './keyframes.scss';
+@import '_variables';
+@import '_keyframes';
 
 @mixin card-part {
 	padding: 10px;

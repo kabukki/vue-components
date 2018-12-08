@@ -14,7 +14,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import '@/scss/mixins.scss';
+@import '@/scss/_mixins';
 
 .s-skeleton-text {
 

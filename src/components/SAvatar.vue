@@ -36,7 +36,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import '@/scss/variables.scss';
+@import '@/scss/_variables';
 
 .s-avatar {
 	border-radius: 50%;

@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/scss/variables.scss';
+@import '@/scss/_variables';
 
 @mixin banner-gradient ($dark, $light) {
 	background-image: linear-gradient(to top, $dark, $light);
