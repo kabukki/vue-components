@@ -1,7 +1,7 @@
 <template>
 	<div class="s-skeleton-heading"></div>
 </template>
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@/scss/_mixins';
 
 .s-skeleton-heading {

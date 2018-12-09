@@ -29,7 +29,7 @@ export default {
 	}
 };
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@/scss/_variables';
 @import '@/scss/_mixins';
 
