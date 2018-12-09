@@ -51,7 +51,8 @@ html, body, #app {
 	> header {
 		display: flex;
 		align-items: center;
-		background-color: $grey;
+		background-color: $grey-darkest;
+		color: $grey-light;
 		padding: 12px;
 		flex-shrink: 0;
 
@@ -59,6 +60,9 @@ html, body, #app {
 			display: block;
 			height: 50px;
 			margin-right: 12px;
+		}
+		h1 {
+			color: inherit;
 		}
 	}
 	> main {
@@ -77,6 +81,9 @@ html, body, #app {
 				&.active {
 					background-color: $purple;
 					color: $grey-lightest;
+				}
+				&:hover {
+					background-color: $grey;
 				}
 			}
 		}
