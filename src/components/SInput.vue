@@ -74,6 +74,9 @@ export default {
 		padding: 8px;
 		transition: color .2s;
 
+		&::placeholder {
+			color: $grey;
+		}
 		&:focus {
 			color: $purple;
 		}
