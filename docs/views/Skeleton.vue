@@ -5,7 +5,12 @@
 		<hr>
 		<h2>Examples</h2>
 		<h3>Avatar</h3>
-		<SSkeletonAvatar/>
+		<div class="flex">
+			<SSkeletonAvatar/>
+			<SSkeletonAvatar :size="60"/>
+			<SSkeletonAvatar :size="80"/>
+			<SSkeletonAvatar :size="100"/>
+		</div>
 		<h3>Heading</h3>
 		<SSkeletonHeading/>
 		<h3>Image</h3>
@@ -27,5 +32,6 @@
 .flex {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 </style>
