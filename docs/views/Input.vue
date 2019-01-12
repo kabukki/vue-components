@@ -41,9 +41,3 @@ export default {
 	}
 };
 </script>
-<style lang="scss" scoped>
-.flex {
-	display: flex;
-	justify-content: space-between;
-}
-</style>

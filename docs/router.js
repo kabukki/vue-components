@@ -10,6 +10,7 @@ import Card from './views/Card';
 import Checkbox from './views/Checkbox';
 import Input from './views/Input';
 import Label from './views/Label';
+import Skeleton from './views/Skeleton';
 
 Vue.use(Router);
 
@@ -51,6 +52,10 @@ export default new Router({
 			path: '/label',
 			name: 'label',
 			component: Label
+		}, {
+			path: '/skeleton',
+			name: 'skeleton',
+			component: Skeleton
 		}
 	]
 });

@@ -7,5 +7,6 @@
 .s-skeleton-image {
 	@include skeleton-element;
 	height: 120px;
+	min-width: 180px;
 }
 </style>

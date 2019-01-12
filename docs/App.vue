@@ -30,7 +30,8 @@ export default {
 				{ title: 'Card', name: 'card' },
 				{ title: 'Checkbox', name: 'checkbox' },
 				{ title: 'Input', name: 'input' },
-				{ title: 'Label', name: 'label' }
+				{ title: 'Label', name: 'label' },
+				{ title: 'Skeleton', name: 'skeleton' }
 			]
 		};
 	}	
