@@ -1,6 +1,6 @@
 {
   "name": "@shops/vue-components",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Vue component framework for the web client",
   "author": "Lucien Le Roux",
   "scripts": {
