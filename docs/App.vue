@@ -61,7 +61,7 @@ html, body, #app {
 			height: 50px;
 			margin-right: 12px;
 		}
-		h1 {
+		a, h1 {
 			color: inherit;
 		}
 	}
@@ -77,6 +77,7 @@ html, body, #app {
 				display: block;
 				padding: 12px;
 				min-width: 120px;
+				color: inherit;
 
 				&.active {
 					background-color: $purple;
