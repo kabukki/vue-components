@@ -45,15 +45,6 @@
 		<h3>Loading</h3>
 		<p>Applies <code>pointer-events: none</code>.</p>
 		<div class="flex">
-			<SButton>Default loading</SButton>
-			<SButton color="red">Red loading</SButton>
-			<SButton color="green">Green loading</SButton>
-			<SButton color="yellow">Yellow loading</SButton>
-			<SButton color="blue">Blue loading</SButton>
-			<SButton color="purple">Purple loading</SButton>
-			<SButton color="cyan">Cyan loading</SButton>
-		</div>
-		<div class="flex">
 			<SButton loading>Default loading</SButton>
 			<SButton color="red" loading>Red loading</SButton>
 			<SButton color="green" loading>Green loading</SButton>
@@ -85,15 +76,8 @@
 	</div>
 </template>
 <style lang="scss" scoped>
-@import 'vars';
-
 .flex {
 	display: flex;
 	justify-content: space-between;
-}
-code {
-	background-color: $grey-light;
-	padding: 4px;
-	font-weight: normal;
 }
 </style>

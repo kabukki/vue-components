@@ -17,7 +17,7 @@ export default {
 		icon: String,
 		clearable: Boolean,
 		value: {
-			type: String,
+			type: [ String, Number ],
 			required: true
 		}
 	},
