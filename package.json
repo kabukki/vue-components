@@ -10,11 +10,14 @@
     "docs:build": "vue-cli-service build"
   },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.9",
     "@fortawesome/free-regular-svg-icons": "^5.5.0",
     "@fortawesome/free-solid-svg-icons": "^5.5.0",
     "@fortawesome/vue-fontawesome": "^0.1.3",
     "@vue/cli-service": "^3.2.0",
+    "babel-loader": "^8.0.5",
     "css-loader": "^2.0.0",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.9.0",
@@ -39,5 +42,10 @@
   "repository": {
     "type": "git",
     "url": "git@gitlab.datsite.eu:Shops/vue-components.git"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
