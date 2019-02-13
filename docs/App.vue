@@ -1,9 +1,9 @@
 <template>
 	<div id="app">
 		<header>
-			<img id="logo" src="@/assets/icon-purple.png" alt="logo">
+			<img id="logo" src="@/assets/icon-vue.png" alt="logo">
 			<router-link to="/">
-				<h1>Shops Vue Components</h1>
+				<h1>Vue Components</h1>
 			</router-link>
 		</header>
 		<main>
@@ -37,7 +37,6 @@ export default {
 	}	
 };
 </script>
-
 <style lang="scss">
 @import 'vars';
 

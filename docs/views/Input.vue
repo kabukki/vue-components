@@ -5,16 +5,16 @@
 		<hr>
 		<h2>Examples</h2>
 		<h3>Text</h3>
-		<SInput type="text" placeholder="Your text" v-model="text"/>
-		<SInput type="text" placeholder="Your text" v-model="text" disabled/>
+		<KInput type="text" placeholder="Your text" v-model="text"/>
+		<KInput type="text" placeholder="Your text" v-model="text" disabled/>
 		<h3>Number</h3>
-		<SInput type="number" placeholder="Your number" v-model.number="number"/>
-		<SInput type="number" placeholder="Your number" v-model.number="number" disabled/>
+		<KInput type="number" placeholder="Your number" v-model.number="number"/>
+		<KInput type="number" placeholder="Your number" v-model.number="number" disabled/>
 		<h3>Icon</h3>
-		<SInput type="text" placeholder="Your text" icon="star" v-model="text"/>
+		<KInput type="text" placeholder="Your text" icon="star" v-model="text"/>
 		<p>TODO icon rework</p>
 		<h3>Clearable</h3>
-		<SInput type="text" placeholder="Your text" clearable v-model="text"/>
+		<KInput type="text" placeholder="Your text" clearable v-model="text"/>
 		<hr>
 		<h2>Usage</h2>
 		<p>TODO</p>

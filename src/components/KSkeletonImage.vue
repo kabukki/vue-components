@@ -1,10 +1,10 @@
 <template>
-	<div class="s-skeleton-image"></div>
+	<div class="k-skeleton-image"></div>
 </template>
 <style lang="scss">
 @import '@/scss/_mixins';
 
-.s-skeleton-image {
+.k-skeleton-image {
 	@include skeleton-element;
 	height: 120px;
 	min-width: 180px;

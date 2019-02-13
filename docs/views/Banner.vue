@@ -2,11 +2,11 @@
 	<div>
 		<h1>Banner</h1>
 		<p>x</p>
-		<SBanner>Lorem ipsum</SBanner>
-		<SBanner color="red">Lorem ipsum</SBanner>
-		<SBanner color="green">Lorem ipsum</SBanner>
-		<SBanner color="yellow">Lorem ipsum</SBanner>
-		<SBanner color="blue">Lorem ipsum</SBanner>
+		<KBanner>Lorem ipsum</KBanner>
+		<KBanner color="red">Lorem ipsum</KBanner>
+		<KBanner color="green">Lorem ipsum</KBanner>
+		<KBanner color="yellow">Lorem ipsum</KBanner>
+		<KBanner color="blue">Lorem ipsum</KBanner>
 		<h2>Props</h2>
 		<h3>color <small>String</small></h3>
 		<p>default: grey</p>

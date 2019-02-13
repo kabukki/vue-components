@@ -1,12 +1,12 @@
 <template>
-	<ul class="s-list">
+	<ul class="k-list">
 		<slot></slot>
 	</ul>
 </template>
 <style lang="scss">
 @import '@/scss/_variables';
 
-.s-list {
+.k-list {
 	padding: 0;
 	list-style: none;
 	background-color: $white;

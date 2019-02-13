@@ -1,5 +1,5 @@
 <template>
-	<div class="s-textarea">
+	<div class="k-textarea">
 		<textarea v-bind="$attrs" :value="value" @input="onInput"></textarea>
 	</div>
 </template>
@@ -22,7 +22,7 @@ export default {
 <style lang="scss">
 @import '@/scss/_variables';
 
-.s-textarea {
+.k-textarea {
 	display: flex;
 	background-color: $white;
 	line-height: 1.5;

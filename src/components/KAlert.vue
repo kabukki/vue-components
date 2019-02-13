@@ -22,7 +22,7 @@ export default {
 	computed: {
 		classes () {
 			return {
-				's-alert': true,
+				'k-alert': true,
 				[this.type]: true
 			};
 		},
@@ -39,7 +39,7 @@ export default {
 <style lang="scss">
 @import '@/scss/_variables';
 
-.s-alert {
+.k-alert {
 	display: flex;
 	align-items: center;
 	padding: 10px;

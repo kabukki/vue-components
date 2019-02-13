@@ -24,7 +24,7 @@ export default {
 	computed: {
 		classes () {
 			return {
-				's-input': true,
+				'k-input': true,
 				disabled: this.disabled
 			};
 		},
@@ -48,7 +48,7 @@ export default {
 <style lang="scss">
 @import '@/scss/_variables';
 
-.s-input {
+.k-input {
 	display: flex;
 	align-items: center;
 	background-color: $white;

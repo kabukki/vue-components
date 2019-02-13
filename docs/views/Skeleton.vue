@@ -6,22 +6,22 @@
 		<h2>Examples</h2>
 		<h3>Avatar</h3>
 		<div class="flex">
-			<SSkeletonAvatar/>
-			<SSkeletonAvatar :size="60"/>
-			<SSkeletonAvatar :size="80"/>
-			<SSkeletonAvatar :size="100"/>
+			<KSkeletonAvatar/>
+			<KSkeletonAvatar :size="60"/>
+			<KSkeletonAvatar :size="80"/>
+			<KSkeletonAvatar :size="100"/>
 		</div>
 		<h3>Heading</h3>
-		<SSkeletonHeading/>
+		<KSkeletonHeading/>
 		<h3>Image</h3>
-		<SSkeletonImage/>
+		<KSkeletonImage/>
 		<div class="flex">
-			<SSkeletonImage/>
-			<SSkeletonImage/>
-			<SSkeletonImage/>
+			<KSkeletonImage/>
+			<KSkeletonImage/>
+			<KSkeletonImage/>
 		</div>
 		<h3>Text</h3>
-		<SSkeletonText/>
+		<KSkeletonText/>
 		<hr>
 		<h2>Usage</h2>
 		<hr>

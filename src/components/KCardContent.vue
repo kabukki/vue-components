@@ -3,7 +3,7 @@ export default {
 	computed: {
 		classes () {
 			return {
-				's-card-content': true
+				'k-card-content': true
 			};
 		}
 	},
@@ -19,7 +19,7 @@ export default {
 <style lang="scss">
 @import '@/scss/_mixins';
 
-.s-card-content {
+.k-card-content {
 	@include card-part;
 
 	flex-grow: 1;

@@ -1,6 +1,6 @@
 <template>
-	<div class="s-skeleton-text">
-		<div class="s-skeleton-text-line" v-for="n in lines" :key="n"></div>
+	<div class="k-skeleton-text">
+		<div class="k-skeleton-text-line" v-for="n in lines" :key="n"></div>
 	</div>
 </template>
 <script>
@@ -16,9 +16,9 @@ export default {
 <style lang="scss">
 @import '@/scss/_mixins';
 
-.s-skeleton-text {
+.k-skeleton-text {
 
-	.s-skeleton-text-line {
+	.k-skeleton-text-line {
 		@include skeleton-element;
 		width: 100%;
 		height: 12px;

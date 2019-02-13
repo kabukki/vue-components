@@ -5,15 +5,15 @@
 		<hr>
 		<h2>Examples</h2>
 		<div class="flex">
-			<SLabel color="red">Red</SLabel>
-			<SLabel color="green">Green</SLabel>
-			<SLabel color="yellow">Yellow</SLabel>
-			<SLabel color="blue">Blue</SLabel>
-			<SLabel color="purple">Purple</SLabel>
-			<SLabel color="cyan">Cyan</SLabel>
-			<SLabel color="success">Success</SLabel>
-			<SLabel color="warning">Warning</SLabel>
-			<SLabel color="error">Error</SLabel>
+			<KLabel color="red">Red</KLabel>
+			<KLabel color="green">Green</KLabel>
+			<KLabel color="yellow">Yellow</KLabel>
+			<KLabel color="blue">Blue</KLabel>
+			<KLabel color="purple">Purple</KLabel>
+			<KLabel color="cyan">Cyan</KLabel>
+			<KLabel color="success">Success</KLabel>
+			<KLabel color="warning">Warning</KLabel>
+			<KLabel color="error">Error</KLabel>
 		</div>
 		<hr>
 		<h2>Usage</h2>

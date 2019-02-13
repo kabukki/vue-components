@@ -3,7 +3,7 @@ export default {
 	computed: {
 		classes () {
 			return {
-				's-card-footer': true
+				'k-card-footer': true
 			};
 		}
 	},
@@ -20,7 +20,7 @@ export default {
 @import '@/scss/_variables';
 @import '@/scss/_mixins';
 
-.s-card-footer {
+.k-card-footer {
 	@include card-part;
 	@include ellipsis;
 

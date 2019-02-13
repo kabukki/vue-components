@@ -6,7 +6,7 @@ export default {
 	computed: {
 		classes () {
 			return {
-				's-label': true
+				'k-label': true
 			};
 		}
 	},
@@ -33,7 +33,7 @@ export default {
 	border: 1px solid $color;
 }
 
-.s-label {
+.k-label {
 	display: inline-block;
 	white-space: nowrap;
 	border-radius: 20px;

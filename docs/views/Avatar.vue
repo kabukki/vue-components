@@ -2,9 +2,9 @@
 	<div>
 		<h1>Avatar</h1>
 		<p>An avatar is a styled img tag with additional properties.</p>
-		<SAvatar src=""/>
-		<SAvatar src="" hoverable/>
-		<SAvatar src="" :size="80"/>
+		<KAvatar src=""/>
+		<KAvatar src="" hoverable/>
+		<KAvatar src="" :size="80"/>
 		<h2>Props</h2>
 		<h3>hoverable <small>Boolean</small></h3>
 		<p>default: false</p>

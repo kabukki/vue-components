@@ -17,7 +17,7 @@ export default {
 	computed: {
 		classes () {
 			return {
-				's-checkbox': true
+				'k-checkbox': true
 			};
 		},
 		listeners () {
@@ -75,7 +75,7 @@ export default {
 <style lang="scss">
 @import '@/scss/_variables';
 
-.s-checkbox {
+.k-checkbox {
 	display: flex;
 	align-items: center;
 	cursor: pointer;
@@ -104,7 +104,7 @@ export default {
 /* Color */
 
 @each $class, $color in $color-map {
-	.s-checkbox.#{$class} > .control > input:checked + svg {
+	.k-checkbox.#{$class} > .control > input:checked + svg {
 		color: $color;
 	}
 }

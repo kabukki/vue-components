@@ -6,52 +6,52 @@
 		<h2>Examples</h2>
 		<h3>Color</h3>
 		<div class="flex">
-			<SButton>Default</SButton>
-			<SButton color="red">Red</SButton>
-			<SButton color="green">Green</SButton>
-			<SButton color="yellow">Yellow</SButton>
-			<SButton color="blue">Blue</SButton>
-			<SButton color="purple">Purple</SButton>
-			<SButton color="cyan">Cyan</SButton>
+			<KButton>Default</KButton>
+			<KButton color="red">Red</KButton>
+			<KButton color="green">Green</KButton>
+			<KButton color="yellow">Yellow</KButton>
+			<KButton color="blue">Blue</KButton>
+			<KButton color="purple">Purple</KButton>
+			<KButton color="cyan">Cyan</KButton>
 		</div>
 		<h3>Outline</h3>
 		<div class="flex">
-			<SButton outline>Default outline</SButton>
-			<SButton color="red" outline>Red outline</SButton>
-			<SButton color="green" outline>Green outline</SButton>
-			<SButton color="yellow" outline>Yellow outline</SButton>
-			<SButton color="blue" outline>Blue outline</SButton>
-			<SButton color="purple" outline>Purple outline</SButton>
-			<SButton color="cyan" outline>Cyan outline</SButton>
+			<KButton outline>Default outline</KButton>
+			<KButton color="red" outline>Red outline</KButton>
+			<KButton color="green" outline>Green outline</KButton>
+			<KButton color="yellow" outline>Yellow outline</KButton>
+			<KButton color="blue" outline>Blue outline</KButton>
+			<KButton color="purple" outline>Purple outline</KButton>
+			<KButton color="cyan" outline>Cyan outline</KButton>
 		</div>
 		<h3>Flat</h3>
 		<div class="flex">
-			<SButton flat>Default flat</SButton>
-			<SButton color="red" flat>Red flat</SButton>
-			<SButton color="green" flat>Green flat</SButton>
-			<SButton color="yellow" flat>Yellow flat</SButton>
-			<SButton color="blue" flat>Blue flat</SButton>
-			<SButton color="purple" flat>Purple flat</SButton>
-			<SButton color="cyan" flat>Cyan flat</SButton>
+			<KButton flat>Default flat</KButton>
+			<KButton color="red" flat>Red flat</KButton>
+			<KButton color="green" flat>Green flat</KButton>
+			<KButton color="yellow" flat>Yellow flat</KButton>
+			<KButton color="blue" flat>Blue flat</KButton>
+			<KButton color="purple" flat>Purple flat</KButton>
+			<KButton color="cyan" flat>Cyan flat</KButton>
 		</div>
 		<h3>Block</h3>
-		<SButton block>Default block</SButton>
-		<SButton color="red" block>Red block</SButton>
-		<SButton color="green" block>Green block</SButton>
-		<SButton color="yellow" block>Yellow block</SButton>
-		<SButton color="blue" block>Blue block</SButton>
-		<SButton color="purple" block>Purple block</SButton>
-		<SButton color="cyan" block>Cyan block</SButton>
+		<KButton block>Default block</KButton>
+		<KButton color="red" block>Red block</KButton>
+		<KButton color="green" block>Green block</KButton>
+		<KButton color="yellow" block>Yellow block</KButton>
+		<KButton color="blue" block>Blue block</KButton>
+		<KButton color="purple" block>Purple block</KButton>
+		<KButton color="cyan" block>Cyan block</KButton>
 		<h3>Loading</h3>
 		<p>Applies <code>pointer-events: none</code>.</p>
 		<div class="flex">
-			<SButton loading>Default loading</SButton>
-			<SButton color="red" loading>Red loading</SButton>
-			<SButton color="green" loading>Green loading</SButton>
-			<SButton color="yellow" loading>Yellow loading</SButton>
-			<SButton color="blue" loading>Blue loading</SButton>
-			<SButton color="purple" loading>Purple loading</SButton>
-			<SButton color="cyan" loading>Cyan loading</SButton>
+			<KButton loading>Default loading</KButton>
+			<KButton color="red" loading>Red loading</KButton>
+			<KButton color="green" loading>Green loading</KButton>
+			<KButton color="yellow" loading>Yellow loading</KButton>
+			<KButton color="blue" loading>Blue loading</KButton>
+			<KButton color="purple" loading>Purple loading</KButton>
+			<KButton color="cyan" loading>Cyan loading</KButton>
 		</div>
 		<hr>
 		<h2>Usage</h2>

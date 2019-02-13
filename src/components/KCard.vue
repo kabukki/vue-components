@@ -9,7 +9,7 @@ export default {
 	computed: {
 		classes () {
 			return {
-				's-card': true,
+				'k-card': true,
 				hoverable: this.hoverable
 			};
 		}
@@ -26,7 +26,7 @@ export default {
 <style lang="scss">
 @import '@/scss/_variables';
 
-.s-card {
+.k-card {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;

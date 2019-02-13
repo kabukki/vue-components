@@ -14,7 +14,7 @@ export default {
 	computed: {
 		classes () {
 			return {
-				's-button': true,
+				'k-button': true,
 				outline: this.outline,
 				flat: this.flat,
 				block: this.block,
@@ -86,7 +86,7 @@ export default {
 	}
 }
 
-.s-button {
+.k-button {
 	@include clickable;
 
 	position: relative;

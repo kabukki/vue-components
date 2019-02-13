@@ -9,7 +9,7 @@ export default {
 	computed: {
 		classes () {
 			return {
-				's-banner': true,
+				'k-banner': true,
 				image: !!this.image,
 				gradient: !this.image
 			};
@@ -40,7 +40,7 @@ export default {
 	background-image: linear-gradient(to top, $dark, $light);
 }
 
-.s-banner {
+.k-banner {
 	display: flex;
 	justify-content: center;
 	text-align: center;

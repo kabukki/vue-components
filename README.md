@@ -1,6 +1,8 @@
-# Shops Vue Components
+# Vue Components
 
-Component framework for Vue.js apps within the Shops project.
+Reusable component framework for Vue.js apps.
+
+The 'K' prefix stands for **Kabukki**.
 
 ### Compiles and minifies for production
 ```

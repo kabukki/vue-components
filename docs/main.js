@@ -4,11 +4,7 @@ import router from './router';
 
 // Plugins
 import './plugins/fontAwesome';
-
-import ShopsComponents from '..';
-import '../dist/shops-vue-components.css';
-
-Vue.use(ShopsComponents);
+import './plugins/vueComponents';
 
 new Vue({
 	router,

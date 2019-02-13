@@ -1,6 +1,10 @@
 <script>
 export default {
 	props: {
+		hoverable: {
+			type: Boolean,
+			default: false
+		},
 		size: {
 			type: Number,
 			default: 40
@@ -9,7 +13,8 @@ export default {
 	computed: {
 		classes () {
 			return {
-				's-skeleton-avatar': true
+				'k-avatar': true,
+				hoverable: this.hoverable
 			};
 		},
 		actualSize () {
@@ -19,22 +24,30 @@ export default {
 	render (h) {
 		const data = {
 			class: this.classes,
+			attrs: this.$attrs,
 			style: {
 				width: this.actualSize,
 				height: this.actualSize
 			}
 		};
 		
-		return h('div', data, [ this.$slots.default ]);
+		return h('img', data, [ this.$slots.default ]);
 	}
 };
 </script>
 <style lang="scss">
 @import '@/scss/_variables';
-@import '@/scss/_mixins';
 
-.s-skeleton-avatar {
-	@include skeleton-element;
+.k-avatar {
 	border-radius: 50%;
+	box-shadow: inset 0 0 10px 20px $grey-darkest;
+
+	&.hoverable {
+		cursor: pointer;
+
+		&:hover {
+			filter: brightness(1.1);
+		}
+	}
 }
 </style>

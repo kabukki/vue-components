@@ -3,7 +3,7 @@
 		<h1>Home</h1>
 		<hr>
 		<h2>Installation</h2>
-		<code>npm install --save @shops/vue-components</code>
+		<p>The package is not published yet.</p>
 		<hr>
 		<p><b>Version {{ version }}</b> Bunbled size: 9.5kB (CSS) + 12.3kB (JS)</p>
 	</div>
