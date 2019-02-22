@@ -1,0 +1,31 @@
+@import '../_variables';
+
+@mixin banner-gradient ($dark, $light) {
+	background-image: linear-gradient(to top, $dark, $light);
+}
+
+.k-banner {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	box-shadow: 0 2px 4px $grey;
+	padding: 100px;
+
+	&.image {
+		background-size: cover;
+		background-position: center;
+	}
+	&.gradient {
+		// By default, gradient will be grey
+		@include banner-gradient ($grey-dark, $grey-light);
+
+		@each $class, $gradient in $gradient-map {
+			$dark: nth($gradient, 1);
+			$light: nth($gradient, 2);
+
+			&.#{$class} {
+				@include banner-gradient ($dark, $light);
+			}
+		}
+	}
+}

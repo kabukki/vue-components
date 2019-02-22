@@ -2,8 +2,8 @@
 * Typography
 */
 
-$font-title:		'Poppins', sans-serif;
-$font-body:			'Nunito', sans-serif;
+$font-title:		'Open Sans', Arial, sans-serif;
+$font-body:			'Open Sans', Arial, sans-serif;
 
 /*
 * Colors
@@ -14,11 +14,11 @@ $black:				#000;
 
 // Neutral
 
-$grey-lightest:		hsl(210, 16, 97);
-$grey-light:		hsl(208, 23, 86);
-$grey:				hsl(206, 23, 73);
-$grey-dark:			hsl(211, 11, 48);
-$grey-darkest:		hsl(211, 19, 17);
+$grey-lightest:		#f1f1f1;
+$grey-light:		#888;
+$grey:				#666;
+$grey-dark:			#444;
+$grey-darkest:		#222;
 
 // Accents
 
@@ -48,14 +48,17 @@ $blue:				hsl(204, 67, 45);
 $blue-dark:			hsl(204, 70, 36);
 $blue-darkest:		hsl(205, 63, 26);
 
-$purple:			#a4a;
-$purple-dark:		#404;
+$brown-lightest:	#d9d8ca; //beige
+$brown-light:		#c09159; //beige
+$brown:				#7d6541;
+$brown-dark:		#724e3e;
+$brown-darkest:		#332f27;
 
 $cyan:				#4aa;
 
 // Aliases
 
-$primary:			$purple;
+$primary:			$brown-dark;
 $success:			$green;
 $error:				$red;
 
@@ -63,13 +66,12 @@ $error:				$red;
 * Maps
 */
 
-
 $color-map: (
 	"red": $red,
 	"green": $green,
 	"yellow": $yellow,
 	"blue": $blue,
-	"purple": $purple,
+	"brown": $brown,
 	"cyan": $cyan
 );
 

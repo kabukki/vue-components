@@ -1,0 +1,68 @@
+// @import 'helpers';
+@import 'variables';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body.alidhan {
+	margin: 0;
+	color: $grey-dark;
+	background-color: $grey-lightest;
+	font-family: $font-body;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	/**
+	 * Components
+	 */
+	
+	@import 'components/alert';
+	@import 'components/avatar';
+	@import 'components/banner';
+	@import 'components/button';
+	@import 'components/card-content';
+	@import 'components/card-footer';
+	@import 'components/card-header';
+	@import 'components/card';
+	@import 'components/checkbox';
+	@import 'components/input';
+	@import 'components/label';
+	@import 'components/list-item';
+	@import 'components/list';
+	@import 'components/skeleton-avatar';
+	@import 'components/skeleton-heading';
+	@import 'components/skeleton-image';
+	@import 'components/skeleton-text';
+	@import 'components/textarea';
+
+	/**
+	 * Common styles
+	 */
+	
+	hr {
+		border: none;
+		height: 1px;
+		background-color: $grey;
+	}
+	
+	a {
+		text-decoration: none;
+		color: $primary;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		line-height: 1.25;
+		color: $grey-darkest;
+		font-family: $font-title;
+	}
+	
+	p {
+		line-height: 1.5;
+	}
+	
+	code {
+		background-color: $grey-lightest;
+		padding: 4px;
+		font-weight: normal;
+	}
+}

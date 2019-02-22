@@ -6,7 +6,8 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 // Paths to theme CSS entries
 const themes = {
-	'themes/shops': path.resolve(__dirname, '../src/scss/themes/shops/shops.scss')
+	'themes/shops': path.resolve(__dirname, '../src/scss/themes/shops/main.scss'),
+	'themes/alidhan': path.resolve(__dirname, '../src/scss/themes/alidhan/main.scss')
 };
 
 module.exports = {

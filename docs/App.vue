@@ -31,7 +31,8 @@ export default {
 		return {
 			theme: 'shops',
 			themes: [
-				{ name: 'Shops', class: 'shops' }
+				{ name: 'Shops', class: 'shops' },
+				{ name: 'Alidhan', class: 'alidhan' },
 			],
 			links: [
 				{ title: 'Alert', name: 'alert' },
