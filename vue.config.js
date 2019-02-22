@@ -8,7 +8,7 @@ module.exports = {
 		resolve: {
 			alias: {
 				'@': path.resolve(__dirname, './docs'),
-				'vars': path.resolve(__dirname, './src/scss/_variables.scss')
+				'vars': path.resolve(__dirname, './src/scss/themes/shops/_variables.scss')
 			}
 		}
 	}

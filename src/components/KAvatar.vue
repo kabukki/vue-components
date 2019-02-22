@@ -35,19 +35,3 @@ export default {
 	}
 };
 </script>
-<style lang="scss">
-@import '@/scss/_variables';
-
-.k-avatar {
-	border-radius: 50%;
-	box-shadow: inset 0 0 10px 20px $grey-darkest;
-
-	&.hoverable {
-		cursor: pointer;
-
-		&:hover {
-			filter: brightness(1.1);
-		}
-	}
-}
-</style>

@@ -1,5 +1,7 @@
 import Vue from 'vue';
 import Components from '../..';
-import '../../dist/vue-components.css';
+
+// Include all themes for demo
+import '../../dist/themes/shops.css';
 
 Vue.use(Components);

@@ -13,19 +13,3 @@ export default {
 	}
 };
 </script>
-<style lang="scss">
-@import '@/scss/_mixins';
-
-.k-skeleton-text {
-
-	.k-skeleton-text-line {
-		@include skeleton-element;
-		width: 100%;
-		height: 12px;
-
-		&:last-child:not(:first-child) {
-			width: 80%;
-		}
-	}
-}
-</style>

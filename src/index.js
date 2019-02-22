@@ -1,5 +1,4 @@
 
-import './scss/main.scss';
 import * as components from './components';
 
 export default {

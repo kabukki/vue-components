@@ -16,17 +16,3 @@ export default {
 	}
 };
 </script>
-<style lang="scss">
-@import '@/scss/_mixins';
-
-.k-card-content {
-	@include card-part;
-
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: stretch;
-	color: $grey-dark;
-}
-</style>

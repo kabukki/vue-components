@@ -36,36 +36,3 @@ export default {
 	}
 };
 </script>
-<style lang="scss">
-@import '@/scss/_variables';
-
-.k-alert {
-	display: flex;
-	align-items: center;
-	padding: 10px;
-	margin: 8px 0;
-
-	&.success {
-		color: $green-dark;
-		background-color: $green-lightest;
-		border-left: 4px solid $green;
-	}
-	&.warning {
-		color: $yellow-dark;
-		background-color: $yellow-lightest;
-		border-left: 4px solid $yellow;
-	}
-	&.error {
-		color: $red-dark;
-		background-color: $red-lightest;
-		border-left: 4px solid $red;
-	}
-
-	> .icon {
-		margin-right: 10px;
-	}
-	> .content {
-		flex-grow: 1;
-	}
-}
-</style>

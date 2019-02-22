@@ -4,13 +4,21 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
+// Paths to theme CSS entries
+const themes = {
+	'themes/shops': path.resolve(__dirname, '../src/scss/themes/shops/shops.scss')
+};
+
 module.exports = {
 	mode: 'production',
 	context: path.resolve(__dirname, '..'),
-	entry: './src/index.js',
+	entry: {
+		main: path.resolve(__dirname, '../src/index.js'),
+		...themes
+	},
 	output: {
 		path: path.resolve(__dirname, '../dist'),
-		filename: 'vue-components.js',
+		// filename: 'vue-components.js',
 		libraryTarget: 'umd',
 		// Needed for UMD target to work, due to a bug introduced in Webpack 4
 		// https://github.com/webpack/webpack/issues/6525#issuecomment-417580843
@@ -29,19 +37,25 @@ module.exports = {
 		},
 		extensions: ['.js', '.vue', '.scss']
 	},
+	// optimization: {
+	// 	splitChunks: {
+	// 		cacheGroups: {
+	// 			shops: {
+	// 				test: themes.shops,
+	// 				name: 'shops',
+	// 				filename: 'shops.css',
+	// 				chunks: 'all'
+	// 			}
+	// 		}
+	// 	}
+	// },
 	module: {
 		rules: [{
 			test: /\.vue$/,
 			loader: 'vue-loader'
 		}, {
 			test: /\.scss$/,
-			use: [{
-				loader: MiniCssExtractPlugin.loader
-			}, {
-				loader: 'css-loader'
-			}, {
-				loader: 'sass-loader'
-			}]
+			use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader' ]
 		}, {
 			test: /\.js$/,
 			loader: 'babel-loader',
@@ -51,7 +65,7 @@ module.exports = {
 	plugins: [
 		new VueLoaderPlugin(),
 		new MiniCssExtractPlugin({
-			filename: 'vue-components.css'
+			filename: '[name].css'
 		})
 	],
 	optimization: {

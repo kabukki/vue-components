@@ -1,0 +1,18 @@
+@import '../_variables';
+@import '../_mixins';
+
+.k-card-header {
+	@include card-part;
+	@include ellipsis;
+
+	flex-grow: 0;
+	border-bottom: 1px solid $grey;
+	color: $grey-darkest;
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+
+	h1, h2, h3, h4, h5, h6 {
+		@include ellipsis;
+		margin: 0;
+	}
+}

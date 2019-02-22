@@ -2,9 +2,16 @@
 	<div id="app">
 		<header>
 			<img id="logo" src="@/assets/icon-vue.png" alt="logo">
-			<router-link to="/">
+			<router-link id="title" to="/">
 				<h1>Vue Components</h1>
 			</router-link>
+			<div id="theme">
+				<h3>Theme</h3>
+				<select v-model="theme">
+					<option :value="theme.class" v-for="theme in themes" :key="theme.class">{{ theme.name }}</option>
+					<option :value="null">None</option>
+				</select>
+			</div>
 		</header>
 		<main>
 			<nav>
@@ -22,6 +29,10 @@
 export default {
 	data () {
 		return {
+			theme: 'shops',
+			themes: [
+				{ name: 'Shops', class: 'shops' }
+			],
 			links: [
 				{ title: 'Alert', name: 'alert' },
 				{ title: 'Avatar', name: 'avatar' },
@@ -34,7 +45,18 @@ export default {
 				{ title: 'Skeleton', name: 'skeleton' }
 			]
 		};
-	}	
+	},
+	watch: {
+		theme: {
+			handler: 'setTheme',
+			immediate: true
+		}
+	},
+	methods: {
+		setTheme (theme) {
+			document.body.className = theme || '';
+		}
+	}
 };
 </script>
 <style lang="scss">
@@ -64,6 +86,12 @@ html, body, #app {
 		a, h1 {
 			color: inherit;
 		}
+		#title {
+			flex-grow: 1;
+		}
+		#theme > h3 {
+			color: inherit;
+		}
 	}
 	> main {
 		flex: 1 1 auto;
@@ -80,7 +108,7 @@ html, body, #app {
 				color: inherit;
 
 				&.active {
-					background-color: $purple;
+					background-color: $grey-dark;
 					color: $grey-lightest;
 				}
 				&:hover {

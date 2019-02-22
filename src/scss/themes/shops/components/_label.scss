@@ -1,0 +1,38 @@
+@import '../_variables';
+
+/**
+ * Basic label
+ */
+@mixin label ($color) {
+	// Old, bad contrast version
+	color: $white;
+	background-color: $color;
+	border: 1px solid $color;
+}
+
+.k-label {
+	display: inline-block;
+	white-space: nowrap;
+	border-radius: 20px;
+	padding: 4px 10px;
+	margin: 4px;
+
+	@each $class, $color in $color-map {
+		&.#{$class} {
+			@include label ($color);
+		}
+	}
+
+	&.success {
+		color: $green-dark;
+		background-color: $green-lightest;
+	}
+	&.warning {
+		color: $yellow-dark;
+		background-color: $yellow-lightest;
+	}
+	&.error {
+		color: $red-dark;
+		background-color: $red-lightest;
+	}
+}
