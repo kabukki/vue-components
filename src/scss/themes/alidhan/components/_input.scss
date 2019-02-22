@@ -1,42 +1,53 @@
 @import '../_variables';
 
 .k-input {
-	display: flex;
-	align-items: center;
-	background-color: $white;
-	line-height: 1.5;
-	box-shadow: 0 2px 4px $grey;
 	margin: 8px 0;
 	width: 100%;
-	transition: background-color .2s;
 
-	.icon {
-		flex: 0 0 auto;
-		padding: 10px;
-		color: $grey-darkest;
+	.label {
+		color: $brown-light;
 	}
-	input {
-		flex: 1 0 auto;
-		outline: none;
-		font-size: 20px;
-		font-family: inherit;
-		background-color: inherit;
-		color: $grey-dark;
-		border: none;
-		padding: 8px;
-		transition: color .2s;
+	.input {
+		display: flex;
+		align-items: center;
+		background-color: transparent;
+		line-height: 2;
+		transition: background-color .2s;
+		
+		.icon {
+			flex: 0 0 auto;
+			padding: 10px;
+			color: $grey-darkest;
+		}
+		input {
+			flex: 1 0 auto;
+			outline: none;
+			font-size: 12px;
+			font-family: inherit;
+			background-color: inherit;
+			color: $grey-dark;
+			border: none;
+			border-bottom: 1px solid $grey;
+			padding: 8px 0;
+			transition: color .2s;
 
-		&::placeholder {
-			color: $grey;
+			&::placeholder {
+				color: $grey;
+			}
+			&:focus {
+				color: $primary;
+				border-bottom: 1px solid $primary;
+			}
 		}
-		&:focus {
-			color: $primary;
+		.clear {
+			cursor: pointer;
+			padding: 10px;
+			color: $grey-darkest;
 		}
 	}
-	.clear {
-		cursor: pointer;
-		padding: 10px;
-		color: $grey-darkest;
+	.help {
+		color: $grey-light;
+		font-size: 10px;
 	}
 
 	&.disabled {
@@ -44,7 +55,7 @@
 		background-color: $grey-lightest;
 
 		input {
-			color: $grey;
+			color: $grey-light;
 		}
 	}
 }

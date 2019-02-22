@@ -15,6 +15,10 @@
 		<p>TODO icon rework</p>
 		<h3>Clearable</h3>
 		<KInput type="text" placeholder="Your text" clearable v-model="text"/>
+		<h3>With label</h3>
+		<KInput type="text" label="This is a label" placeholder="Your text" v-model="text"/>
+		<h3>With helper text</h3>
+		<KInput type="text" placeholder="Your text" help="This is a helper text!" v-model="text"/>
 		<hr>
 		<h2>Usage</h2>
 		<p>TODO</p>
@@ -29,6 +33,12 @@
 		<h3>clearable <small><code>Boolean</code></small></h3>
 		<p>default: <code>false</code></p>
 		<p>Appends a clear button to the input.</p>
+		<h3>label <small><code>String</code></small></h3>
+		<p>default: <i>none</i></p>
+		<p>The input label or title.</p>
+		<h3>help <small><code>String</code></small></h3>
+		<p>default: <i>none</i></p>
+		<p>Adds a small helper text after the input.</p>
 	</div>	
 </template>
 <script>

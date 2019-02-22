@@ -1,12 +1,16 @@
 <template>
 	<div :class="classes">
-		<div class="icon" v-if="icon">
-			<font-awesome-icon :icon="icon" />
+		<span class="label" v-if="label">{{ label }}</span>
+		<div class="input">
+			<div class="icon" v-if="icon">
+				<font-awesome-icon :icon="icon" />
+			</div>
+			<input v-bind="$attrs" v-on="listeners" :value="value" :disabled="disabled">
+			<div class="clear" v-if="clearable" v-show="value.length > 0" @click="onClear">
+				<font-awesome-icon icon="times-circle"/>
+			</div>
 		</div>
-		<input v-bind="$attrs" v-on="listeners" :value="value" :disabled="disabled">
-		<div class="clear" v-if="clearable" v-show="value.length > 0" @click="onClear">
-			<font-awesome-icon icon="times-circle"/>
-		</div>
+		<small class="help" v-if="help">{{ help }}</small>
 	</div>
 </template>
 <script>
@@ -16,6 +20,8 @@ export default {
 		disabled: Boolean,
 		icon: String,
 		clearable: Boolean,
+		label: String,
+		help: String,
 		value: {
 			type: [ String, Number ],
 			required: true

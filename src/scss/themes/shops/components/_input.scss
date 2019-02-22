@@ -1,42 +1,51 @@
 @import '../_variables';
 
 .k-input {
-	display: flex;
-	align-items: center;
-	background-color: $white;
-	line-height: 1.5;
-	box-shadow: 0 2px 4px $grey;
-	margin: 8px 0;
-	width: 100%;
-	transition: background-color .2s;
 
-	.icon {
-		flex: 0 0 auto;
-		padding: 10px;
-		color: $grey-darkest;
-	}
-	input {
-		flex: 1 0 auto;
-		outline: none;
+	.label {
 		font-size: 20px;
-		font-family: inherit;
-		background-color: inherit;
-		color: $grey-dark;
-		border: none;
-		padding: 8px;
-		transition: color .2s;
+	}
+	.input {
+		display: flex;
+		align-items: center;
+		background-color: $white;
+		line-height: 1.5;
+		box-shadow: 0 2px 4px $grey;
+		margin: 8px 0;
+		width: 100%;
+		transition: background-color .2s;
 
-		&::placeholder {
-			color: $grey;
+		.icon {
+			flex: 0 0 auto;
+			padding: 10px;
+			color: $grey-darkest;
 		}
-		&:focus {
-			color: $primary;
+		input {
+			flex: 1 0 auto;
+			outline: none;
+			font-size: 20px;
+			font-family: inherit;
+			background-color: inherit;
+			color: $grey-dark;
+			border: none;
+			padding: 8px;
+			transition: color .2s;
+
+			&::placeholder {
+				color: $grey;
+			}
+			&:focus {
+				color: $primary;
+			}
+		}
+		.clear {
+			cursor: pointer;
+			padding: 10px;
+			color: $grey-darkest;
 		}
 	}
-	.clear {
-		cursor: pointer;
-		padding: 10px;
-		color: $grey-darkest;
+	.help {
+		
 	}
 
 	&.disabled {
