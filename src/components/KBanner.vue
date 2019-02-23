@@ -10,8 +10,7 @@ export default {
 		classes () {
 			return {
 				'k-banner': true,
-				image: !!this.image,
-				gradient: !this.image
+				image: !!this.image
 			};
 		}
 	},

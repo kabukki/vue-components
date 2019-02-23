@@ -3,10 +3,12 @@
 		<h1>Banner</h1>
 		<p>x</p>
 		<KBanner>Lorem ipsum</KBanner>
-		<KBanner color="red">Lorem ipsum</KBanner>
-		<KBanner color="green">Lorem ipsum</KBanner>
-		<KBanner color="yellow">Lorem ipsum</KBanner>
-		<KBanner color="blue">Lorem ipsum</KBanner>
+		<KBanner color="primary">Lorem ipsum</KBanner>
+		<KBanner color="secondary">Lorem ipsum</KBanner>
+		<KBanner color="accent">Lorem ipsum</KBanner>
+		<KBanner color="success">Lorem ipsum</KBanner>
+		<KBanner color="warning">Lorem ipsum</KBanner>
+		<KBanner color="error">Lorem ipsum</KBanner>
 		<h2>Props</h2>
 		<h3>color <small>String</small></h3>
 		<p>default: grey</p>
