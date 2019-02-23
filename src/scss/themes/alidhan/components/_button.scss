@@ -94,6 +94,7 @@
 
 	&.loading {
 		pointer-events: none;
+		filter: brightness(.75);
 
 		.loader {
 			position: absolute;

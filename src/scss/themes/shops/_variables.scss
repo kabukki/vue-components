@@ -56,7 +56,10 @@ $cyan:				#4aa;
 // Aliases
 
 $primary:			$purple;
+$secondary:			$purple-dark;
+$accent:			$blue;
 $success:			$green;
+$warning:			$yellow;
 $error:				$red;
 
 /*
@@ -64,12 +67,12 @@ $error:				$red;
 */
 
 $color-map: (
-	"red": $red,
-	"green": $green,
-	"yellow": $yellow,
-	"blue": $blue,
-	"purple": $purple,
-	"cyan": $cyan
+	"primary": $primary,
+	"secondary": $secondary,
+	"accent": $accent,
+	"success": $success,
+	"warning": $warning,
+	"error": $error
 );
 
 $gradient-map: (

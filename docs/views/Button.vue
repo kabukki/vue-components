@@ -7,51 +7,51 @@
 		<h3>Color</h3>
 		<div class="flex">
 			<KButton>Default</KButton>
-			<KButton color="red">Red</KButton>
-			<KButton color="green">Green</KButton>
-			<KButton color="yellow">Yellow</KButton>
-			<KButton color="blue">Blue</KButton>
-			<KButton color="purple">Purple</KButton>
-			<KButton color="cyan">Cyan</KButton>
+			<KButton color="primary">Primary</KButton>
+			<KButton color="secondary">Secondary</KButton>
+			<KButton color="accent">Accent</KButton>
+			<KButton color="success">Success</KButton>
+			<KButton color="warning">Warning</KButton>
+			<KButton color="error">Error</KButton>
 		</div>
 		<h3>Outline</h3>
 		<div class="flex">
 			<KButton outline>Default outline</KButton>
-			<KButton color="red" outline>Red outline</KButton>
-			<KButton color="green" outline>Green outline</KButton>
-			<KButton color="yellow" outline>Yellow outline</KButton>
-			<KButton color="blue" outline>Blue outline</KButton>
-			<KButton color="purple" outline>Purple outline</KButton>
-			<KButton color="cyan" outline>Cyan outline</KButton>
+			<KButton color="primary" outline>Primary outline</KButton>
+			<KButton color="secondary" outline>Secondary outline</KButton>
+			<KButton color="accent" outline>Accent outline</KButton>
+			<KButton color="success" outline>Success outline</KButton>
+			<KButton color="warning" outline>Warning outline</KButton>
+			<KButton color="error" outline>Error outline</KButton>
 		</div>
 		<h3>Flat</h3>
 		<div class="flex">
 			<KButton flat>Default flat</KButton>
-			<KButton color="red" flat>Red flat</KButton>
-			<KButton color="green" flat>Green flat</KButton>
-			<KButton color="yellow" flat>Yellow flat</KButton>
-			<KButton color="blue" flat>Blue flat</KButton>
-			<KButton color="purple" flat>Purple flat</KButton>
-			<KButton color="cyan" flat>Cyan flat</KButton>
+			<KButton color="primary" flat>Primary flat</KButton>
+			<KButton color="secondary" flat>Secondary flat</KButton>
+			<KButton color="accent" flat>Accent flat</KButton>
+			<KButton color="success" flat>Success flat</KButton>
+			<KButton color="warning" flat>Warning flat</KButton>
+			<KButton color="error" flat>Error flat</KButton>
 		</div>
 		<h3>Block</h3>
 		<KButton block>Default block</KButton>
-		<KButton color="red" block>Red block</KButton>
-		<KButton color="green" block>Green block</KButton>
-		<KButton color="yellow" block>Yellow block</KButton>
-		<KButton color="blue" block>Blue block</KButton>
-		<KButton color="purple" block>Purple block</KButton>
-		<KButton color="cyan" block>Cyan block</KButton>
+		<KButton color="primary" block>Primary block</KButton>
+		<KButton color="secondary" block>Secondary block</KButton>
+		<KButton color="accent" block>Accent block</KButton>
+		<KButton color="success" block>Success block</KButton>
+		<KButton color="warning" block>Warning block</KButton>
+		<KButton color="error" block>Error block</KButton>
 		<h3>Loading</h3>
 		<p>Applies <code>pointer-events: none</code>.</p>
 		<div class="flex">
 			<KButton loading>Default loading</KButton>
-			<KButton color="red" loading>Red loading</KButton>
-			<KButton color="green" loading>Green loading</KButton>
-			<KButton color="yellow" loading>Yellow loading</KButton>
-			<KButton color="blue" loading>Blue loading</KButton>
-			<KButton color="purple" loading>Purple loading</KButton>
-			<KButton color="cyan" loading>Cyan loading</KButton>
+			<KButton color="primary" loading>Primary loading</KButton>
+			<KButton color="secondary" loading>Secondary loading</KButton>
+			<KButton color="accent" loading>Accent loading</KButton>
+			<KButton color="success" loading>Success loading</KButton>
+			<KButton color="warning" loading>Warning loading</KButton>
+			<KButton color="error" loading>Error loading</KButton>
 		</div>
 		<hr>
 		<h2>Usage</h2>
@@ -60,7 +60,7 @@
 		<h2>Props</h2>
 		<h3>color <small><code>String</code></small></h3>
 		<p>default: <i>none</i></p>
-		<p>one of: 'red', 'green', 'yellow', 'blue', 'purple', 'cyan'</p>
+		<p>one of: 'primary', 'secondary', 'accent', 'success', 'warning', 'error'</p>
 		<h3>outline <small><code>Boolean</code></small></h3>
 		<p>default: <code>false</code></p>
 		<p>Outline style</p>
