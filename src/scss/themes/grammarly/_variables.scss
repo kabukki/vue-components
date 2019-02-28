@@ -1,0 +1,76 @@
+/*
+* Typography
+*/
+
+$font-title:		'AkkuratPro', 'Lato', 'Arial', sans-serif;
+$font-body:			'AkkuratPro', 'Lato', 'Arial', sans-serif;
+
+/*
+* Colors
+*/
+
+$white:				#fff;
+$black:				#000;
+
+// Neutral
+
+$grey-lightest:		#e4e6f2;
+$grey-light:		#acacae;
+$grey:				#8189a9;
+$grey-dark:			#3b3e4d;
+$grey-darkest:		#1c1e29;
+
+// Accents
+
+$red-lightest:		hsl(0, 84, 94);
+$red-light:			hsl(358, 72, 64);
+$red:				hsl(357, 73, 53);
+$red-dark:			hsl(357, 69, 43);
+$red-darkest:		hsl(358, 63, 33);
+
+$green-lightest:	hsl(144, 81, 93);
+$green-light:		#8dc1e3;
+$green:				#15c39a;
+$green-dark:		hsl(150, 70, 35);
+$green-darkest:		hsl(151, 73, 26);
+
+$yellow-lightest:	hsl(43, 100, 97);
+$yellow-light:		hsl(41, 95, 91);
+$yellow:			hsl(39, 88, 69);
+$yellow-dark:		hsl(41, 55, 54);
+$yellow-darkest:	hsl(39, 52, 36);
+
+// Other
+
+$blue-lightest:		hsl(204, 100, 96);
+$blue-light:		hsl(203, 76, 80);
+$blue:				#4c7af1;
+$blue-dark:			hsl(204, 70, 36);
+$blue-darkest:		hsl(205, 63, 26);
+
+$purple:			#a4a;
+$purple-dark:		#404;
+
+$cyan:				#4aa;
+
+// Aliases
+
+$primary:			$green;
+$secondary:			$green-light;
+$accent:			$blue;
+$success:			$green;
+$warning:			$yellow;
+$error:				$red;
+
+/*
+* Maps
+*/
+
+$color-map: (
+	"primary": $primary,
+	"secondary": $secondary,
+	"accent": $accent,
+	"success": $success,
+	"warning": $warning,
+	"error": $error
+);

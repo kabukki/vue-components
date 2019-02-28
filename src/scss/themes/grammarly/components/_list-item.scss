@@ -1,0 +1,8 @@
+@import '../_variables';
+
+.k-list-item {
+
+	&:not(:last-child) {
+		border-bottom: 1px solid $grey;
+	}
+}

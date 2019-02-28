@@ -24,6 +24,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "sass-loader": "^7.1.0",
     "terser-webpack-plugin": "^1.1.0",
+    "url-loader": "^1.1.2",
     "vue": "^2.5.18",
     "vue-loader": "^15.4.2",
     "vue-router": "^3.0.1",
@@ -40,7 +41,7 @@
     "vue": "^2.5.17"
   },
   "repository": {
-	"type": "git",
+    "type": "git",
     "url": "git@gitlab.datsite.eu:lucien/vue-components.git"
   },
   "browserslist": [

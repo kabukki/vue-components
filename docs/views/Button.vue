@@ -16,42 +16,42 @@
 		</div>
 		<h3>Outline</h3>
 		<div class="flex">
-			<KButton outline>Default outline</KButton>
-			<KButton color="primary" outline>Primary outline</KButton>
-			<KButton color="secondary" outline>Secondary outline</KButton>
-			<KButton color="accent" outline>Accent outline</KButton>
-			<KButton color="success" outline>Success outline</KButton>
-			<KButton color="warning" outline>Warning outline</KButton>
-			<KButton color="error" outline>Error outline</KButton>
+			<KButton outline>Default</KButton>
+			<KButton color="primary" outline>Primary</KButton>
+			<KButton color="secondary" outline>Secondary</KButton>
+			<KButton color="accent" outline>Accent</KButton>
+			<KButton color="success" outline>Success</KButton>
+			<KButton color="warning" outline>Warning</KButton>
+			<KButton color="error" outline>Error</KButton>
 		</div>
 		<h3>Flat</h3>
 		<div class="flex">
-			<KButton flat>Default flat</KButton>
-			<KButton color="primary" flat>Primary flat</KButton>
-			<KButton color="secondary" flat>Secondary flat</KButton>
-			<KButton color="accent" flat>Accent flat</KButton>
-			<KButton color="success" flat>Success flat</KButton>
-			<KButton color="warning" flat>Warning flat</KButton>
-			<KButton color="error" flat>Error flat</KButton>
+			<KButton flat>Default</KButton>
+			<KButton color="primary" flat>Primary</KButton>
+			<KButton color="secondary" flat>Secondary</KButton>
+			<KButton color="accent" flat>Accent</KButton>
+			<KButton color="success" flat>Success</KButton>
+			<KButton color="warning" flat>Warning</KButton>
+			<KButton color="error" flat>Error</KButton>
 		</div>
 		<h3>Block</h3>
-		<KButton block>Default block</KButton>
-		<KButton color="primary" block>Primary block</KButton>
-		<KButton color="secondary" block>Secondary block</KButton>
-		<KButton color="accent" block>Accent block</KButton>
-		<KButton color="success" block>Success block</KButton>
-		<KButton color="warning" block>Warning block</KButton>
-		<KButton color="error" block>Error block</KButton>
+		<KButton block>Default</KButton>
+		<KButton color="primary" block>Primary</KButton>
+		<KButton color="secondary" block>Secondary</KButton>
+		<KButton color="accent" block>Accent</KButton>
+		<KButton color="success" block>Success</KButton>
+		<KButton color="warning" block>Warning</KButton>
+		<KButton color="error" block>Error</KButton>
 		<h3>Loading</h3>
 		<p>Applies <code>pointer-events: none</code>.</p>
 		<div class="flex">
-			<KButton loading>Default loading</KButton>
-			<KButton color="primary" loading>Primary loading</KButton>
-			<KButton color="secondary" loading>Secondary loading</KButton>
-			<KButton color="accent" loading>Accent loading</KButton>
-			<KButton color="success" loading>Success loading</KButton>
-			<KButton color="warning" loading>Warning loading</KButton>
-			<KButton color="error" loading>Error loading</KButton>
+			<KButton loading>Default</KButton>
+			<KButton color="primary" loading>Primary</KButton>
+			<KButton color="secondary" loading>Secondary</KButton>
+			<KButton color="accent" loading>Accent</KButton>
+			<KButton color="success" loading>Success</KButton>
+			<KButton color="warning" loading>Warning</KButton>
+			<KButton color="error" loading>Error</KButton>
 		</div>
 		<hr>
 		<h2>Usage</h2>

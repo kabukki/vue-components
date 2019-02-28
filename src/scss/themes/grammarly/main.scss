@@ -1,12 +1,36 @@
 @import 'variables';
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Poppins|Nunito:300,400,500,700');
-
-.shops {
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@font-face {
+	font-family: AkkuratPro;
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/akkurat-regular.woff2) format("woff2");
+}
+@font-face {
+	font-family: AkkuratPro;
+	font-style: italic;
+	font-weight: 400;
+	src: url(fonts/akkurat-italic.woff2) format("woff2");
+}
+@font-face {
+	font-family: AkkuratPro;
+	font-style: normal;
+	font-weight: 700;
+	src: url(fonts/akkurat-bold.woff2) format("woff2");
+}
+@font-face {
+	font-family: AkkuratPro;
+	font-style: italic;
+	font-weight: 700;
+	src: url(fonts/akkurat-bolditalic.woff2) format("woff2");
+}
+	
+.grammarly {
 	// margin: 0;
 	color: $grey-dark;
-	background-color: $grey-lightest;
+	background-color: $white;
 	font-family: $font-body;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -39,7 +63,7 @@
 	 */
 	
 	@import 'helpers';
-
+	
 	/**
 	 * Common styles
 	 */
@@ -52,7 +76,7 @@
 	
 	a {
 		text-decoration: none;
-		color: $purple;
+		color: $blue;
 	}
 	
 	h1, h2, h3, h4, h5, h6 {
@@ -62,7 +86,9 @@
 	}
 	
 	p {
-		line-height: 1.5;
+		font-size: 18px;
+		line-height: 32px;
+		letter-spacing: .1px;
 	}
 	
 	code {

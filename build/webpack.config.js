@@ -3,12 +3,14 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const themes = require('../themes').webpackEntries;
 
 // Paths to theme CSS entries
-const themes = {
-	'themes/shops': path.resolve(__dirname, '../src/scss/themes/shops/main.scss'),
-	'themes/alidhan': path.resolve(__dirname, '../src/scss/themes/alidhan/main.scss')
-};
+// const themes = {
+// 	'themes/shops': path.resolve(__dirname, '../src/scss/themes/shops/main.scss'),
+// 	'themes/alidhan': path.resolve(__dirname, '../src/scss/themes/alidhan/main.scss'),
+// 	'themes/grammarly': path.resolve(__dirname, '../src/scss/themes/grammarly/main.scss')
+// };
 
 module.exports = {
 	mode: 'production',
@@ -55,12 +57,15 @@ module.exports = {
 			test: /\.vue$/,
 			loader: 'vue-loader'
 		}, {
-			test: /\.scss$/,
-			use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader' ]
-		}, {
 			test: /\.js$/,
 			loader: 'babel-loader',
 			exclude: /node_modules/
+		}, {
+			test: /\.scss$/,
+			use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader' ]
+		}, {
+			test: /\.woff2$/,
+			use: 'url-loader'
 		}]
 	},
 	plugins: [

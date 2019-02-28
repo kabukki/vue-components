@@ -19,21 +19,20 @@
 					{{ link.title }}
 				</router-link>
 			</nav>
-			<div class="content">
+			<div class="content" :class="theme">
 				<router-view></router-view>
 			</div>
 		</main>
 	</div>
 </template>
 <script>
+import { themes } from '../themes';
+
 export default {
 	data () {
 		return {
 			theme: 'shops',
-			themes: [
-				{ name: 'Shops', class: 'shops' },
-				{ name: 'Alidhan', class: 'alidhan' },
-			],
+			themes,
 			links: [
 				{ title: 'Alert', name: 'alert' },
 				{ title: 'Avatar', name: 'avatar' },
@@ -46,30 +45,28 @@ export default {
 				{ title: 'Skeleton', name: 'skeleton' }
 			]
 		};
-	},
-	watch: {
-		theme: {
-			handler: 'setTheme',
-			immediate: true
-		}
-	},
-	methods: {
-		setTheme (theme) {
-			document.body.className = theme || '';
-		}
 	}
 };
 </script>
 <style lang="scss">
-@import 'vars';
+$grey-lightest:		hsl(210, 16, 97);
+$grey-light:		hsl(208, 23, 86);
+$grey:				hsl(206, 23, 73);
+$grey-dark:			hsl(211, 11, 48);
+$grey-darkest:		hsl(211, 19, 17);
 
 html, body, #app {
 	height: 100%;
 }
 
+body {
+	margin: 0;
+}
+
 #app {
 	display: flex;
 	flex-direction: column;
+	font-family: Arial, sans-serif;
 
 	> header {
 		display: flex;
@@ -86,6 +83,7 @@ html, body, #app {
 		}
 		a, h1 {
 			color: inherit;
+			text-decoration: none;
 		}
 		#title {
 			flex-grow: 1;
@@ -107,6 +105,7 @@ html, body, #app {
 				padding: 12px;
 				min-width: 120px;
 				color: inherit;
+				text-decoration: none;
 
 				&.active {
 					background-color: $grey-dark;

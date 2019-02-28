@@ -1,11 +1,10 @@
-// @import 'helpers';
 @import 'variables';
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-body.alidhan {
-	margin: 0;
+.alidhan {
+	// margin: 0;
 	color: $grey-dark;
 	background-color: $grey-lightest;
 	font-family: $font-body;
@@ -36,6 +35,12 @@ body.alidhan {
 	@import 'components/textarea';
 
 	/**
+	 * Helpers
+	 */
+	
+	@import 'helpers';
+
+	/**
 	 * Common styles
 	 */
 	
@@ -64,5 +69,11 @@ body.alidhan {
 		background-color: $grey-lightest;
 		padding: 4px;
 		font-weight: normal;
+	}
+	
+	pre {
+		background-color: $grey-darkest;
+		color: $grey-lightest;
+		padding: 10px;
 	}
 }

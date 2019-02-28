@@ -5,12 +5,10 @@
 		<hr>
 		<h2>Examples</h2>
 		<div class="flex">
-			<KLabel color="red">Red</KLabel>
-			<KLabel color="green">Green</KLabel>
-			<KLabel color="yellow">Yellow</KLabel>
-			<KLabel color="blue">Blue</KLabel>
-			<KLabel color="purple">Purple</KLabel>
-			<KLabel color="cyan">Cyan</KLabel>
+			<KLabel>Default</KLabel>
+			<KLabel color="primary">Primary</KLabel>
+			<KLabel color="secondary">Secondary</KLabel>
+			<KLabel color="accent">Accent</KLabel>
 			<KLabel color="success">Success</KLabel>
 			<KLabel color="warning">Warning</KLabel>
 			<KLabel color="error">Error</KLabel>
@@ -31,15 +29,8 @@
 	</div>
 </template>
 <style lang="scss" scoped>
-@import 'vars';
-
 .flex {
 	display: flex;
 	justify-content: space-between;
-}
-code {
-	background-color: $grey-light;
-	padding: 4px;
-	font-weight: normal;
 }
 </style>

@@ -1,25 +1,25 @@
-@import '_variables';
+@import 'variables';
 
-.red-text {
-	color: $red-dark !important;
+.primary-text {
+	color: $primary !important;
 }
 
-.green-text {
-	color: $green-dark !important;
+.secondary-text {
+	color: $secondary !important;
 }
 
-.blue-text {
-	color: $blue;
+.accent-text {
+	color: $accent !important;
 }
 
-.yellow-text {
-	color: $yellow-dark !important;
+.success-text {
+	color: $success !important;
 }
 
-.purple-text {
-	color: $purple !important;
+.warning-text {
+	color: $warning !important;
 }
 
-.cyan-text {
-	color: $cyan;
+.error-text {
+	color: $error !important;
 }

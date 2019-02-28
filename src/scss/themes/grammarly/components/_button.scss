@@ -1,0 +1,110 @@
+@import '../_variables';
+@import '../_mixins';
+
+/**
+ * Solid button
+ */
+@mixin button ($color) {
+	color: $white;
+	background-color: $color;
+	border: 1px solid $color;
+
+	&:hover {
+		opacity: .7;
+	}
+}
+
+/**
+ * Inverted button
+ */
+@mixin button-outline ($color) {
+	color: $color;
+	border: 1px solid $grey-lightest;
+}
+
+/**
+ * Flat button
+ */
+@mixin button-flat ($color) {
+	color: $color;
+}
+
+.k-button {
+	@include clickable;
+
+	position: relative;
+	text-transform: uppercase;
+	font-family: inherit;
+	letter-spacing: 1px;
+	min-width: 100px;
+	padding: 10px 20px;
+	margin: 8px 0;
+	z-index: 1;
+	transition: all .2s;
+
+	// Default style
+	color: $grey-dark;
+	background-color: $grey-lightest;
+	border: 1px solid $grey-lightest;
+	border-radius: 60px;
+	overflow: hidden;
+
+	@each $class, $color in $color-map {
+		&.#{$class} {
+			@include button ($color);
+		}
+	}
+
+	&:disabled {
+		filter: grayscale(1);
+		cursor: not-allowed;
+		// background-color: red !important;
+	}
+
+	&.outline {
+		transition: background-color .2s;
+		background-color: transparent;
+
+		@each $class, $color in $color-map {
+			&.#{$class} {
+				@include button-outline ($color);
+			}
+		}
+	}
+
+	&.flat {
+		border: none;
+		background-color: transparent;
+		color: $grey-dark;
+
+		@each $class, $color in $color-map {
+			&.#{$class} {
+				@include button-flat ($color);
+			}
+		}
+	}
+
+	&.block {
+		display: block;
+		width: 100%;
+	}
+
+	&.loading {
+		pointer-events: none;
+
+		.loader {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: inherit;
+			z-index: 2;
+		}
+	}
+
+}
