@@ -11,6 +11,7 @@
 					<option :value="theme.class" v-for="theme in themes" :key="theme.class">{{ theme.name }}</option>
 					<option :value="null">None</option>
 				</select>
+				<KCheckbox label="Dark" v-model="dark"/>
 			</div>
 		</header>
 		<main>
@@ -19,7 +20,7 @@
 					{{ link.title }}
 				</router-link>
 			</nav>
-			<div class="content" :class="theme">
+			<div class="content" :class="themeClasses">
 				<router-view></router-view>
 			</div>
 		</main>
@@ -31,6 +32,7 @@ import { themes } from '../themes';
 export default {
 	data () {
 		return {
+			dark: false,
 			theme: 'shops',
 			themes,
 			links: [
@@ -45,6 +47,14 @@ export default {
 				{ title: 'Skeleton', name: 'skeleton' }
 			]
 		};
+	},
+	computed: {
+		themeClasses () {
+			return {
+				...(this.theme && { [this.theme]: true }),
+				dark: this.dark
+			};
+		}
 	}
 };
 </script>

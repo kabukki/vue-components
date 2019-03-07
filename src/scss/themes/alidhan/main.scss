@@ -1,16 +1,10 @@
+@import '../../mixins';
 @import 'variables';
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 .alidhan {
-	// margin: 0;
-	color: $grey-dark;
-	background-color: $grey-lightest;
-	font-family: $font-body;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-
 	/**
 	 * Components
 	 */
@@ -44,6 +38,46 @@
 	 * Common styles
 	 */
 	
+	font-family: $font-body;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	@include light {
+		color: $grey-dark;
+		background-color: $grey-lightest;	
+
+		h1, h2, h3, h4, h5, h6 {
+			color: $grey-darkest;
+		}
+
+		code {
+			background-color: $grey-light;
+		}
+	
+		pre {
+			background-color: $grey-darkest;
+			color: $grey-lightest;
+		}
+	}
+
+	@include dark {
+		color: $grey-light;
+		background-color: $grey-darkest;
+
+		h1, h2, h3, h4, h5, h6 {
+			color: $grey-lightest;
+		}
+
+		code {
+			background-color: $grey-dark;
+		}
+	
+		pre {
+			background-color: $grey-lightest;
+			color: $grey-darkest;
+		}
+	}
+
 	hr {
 		border: none;
 		height: 1px;
@@ -57,7 +91,6 @@
 	
 	h1, h2, h3, h4, h5, h6 {
 		line-height: 1.25;
-		color: $grey-darkest;
 		font-family: $font-title;
 	}
 	
@@ -66,14 +99,11 @@
 	}
 	
 	code {
-		background-color: $grey-lightest;
 		padding: 4px;
 		font-weight: normal;
 	}
 	
 	pre {
-		background-color: $grey-darkest;
-		color: $grey-lightest;
 		padding: 10px;
 	}
 }

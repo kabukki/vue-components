@@ -1,0 +1,11 @@
+@mixin light {
+	&:not(.dark) {
+		@content;
+	}
+}
+
+@mixin dark {
+	&.dark {
+		@content;
+	}
+}
