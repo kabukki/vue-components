@@ -59,11 +59,11 @@ export default {
 };
 </script>
 <style lang="scss">
-$grey-lightest:		hsl(210, 16, 97);
-$grey-light:		hsl(208, 23, 86);
-$grey:				hsl(206, 23, 73);
-$grey-dark:			hsl(211, 11, 48);
-$grey-darkest:		hsl(211, 19, 17);
+$grey-lightest:		#ffffff;
+$grey-light:		#f6f6f6;
+$grey:				#999;;
+$grey-dark:			#717e7f;
+$grey-darkest:		#364b5d;
 
 html, body, #app {
 	height: 100%;
