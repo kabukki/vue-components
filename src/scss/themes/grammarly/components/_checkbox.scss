@@ -1,10 +1,17 @@
-@import '../_variables';
+@import '../variables';
 
 .k-checkbox {
 	display: flex;
 	align-items: center;
 	cursor: pointer;
 	margin: 8px 0;
+
+	/* Color */
+	@each $class, $color in $color-map {
+		&.#{$class} > .control > input:checked + svg {
+			color: $color;
+		}
+	}
 
 	.control {
 		position: relative;
@@ -26,10 +33,3 @@
 	}
 }
 
-/* Color */
-
-@each $class, $color in $color-map {
-	.k-checkbox.#{$class} > .control > input:checked + svg {
-		color: $color;
-	}
-}

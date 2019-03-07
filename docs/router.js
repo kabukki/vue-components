@@ -10,7 +10,11 @@ import Card from './views/Card';
 import Checkbox from './views/Checkbox';
 import Input from './views/Input';
 import Label from './views/Label';
-import Skeleton from './views/Skeleton';
+import SkeletonAvatar from './views/SkeletonAvatar';
+import SkeletonImage from './views/SkeletonImage';
+import SkeletonHeading from './views/SkeletonHeading';
+import SkeletonText from './views/SkeletonText';
+import Textarea from './views/Textarea';
 
 Vue.use(Router);
 
@@ -53,9 +57,25 @@ export default new Router({
 			name: 'label',
 			component: Label
 		}, {
-			path: '/skeleton',
-			name: 'skeleton',
-			component: Skeleton
+			path: '/skeleton-avatar',
+			name: 'skeleton-avatar',
+			component: SkeletonAvatar
+		}, {
+			path: '/skeleton-image',
+			name: 'skeleton-image',
+			component: SkeletonImage
+		}, {
+			path: '/skeleton-heading',
+			name: 'skeleton-heading',
+			component: SkeletonHeading
+		}, {
+			path: '/skeleton-text',
+			name: 'skeleton-text',
+			component: SkeletonText
+		}, {
+			path: '/textarea',
+			name: 'textarea',
+			component: Textarea
 		}
 	]
 });

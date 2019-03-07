@@ -23,23 +23,51 @@
 		<h2>Usage</h2>
 		<p>TODO</p>
 		<hr>
-		<h2>Props</h2>
-		<h3>disabled <small><code>Boolean</code></small></h3>
-		<p>default: <code>false</code></p>
-		<p>disable the component (needed to propagate it to the whole component and not disable only the raw input)</p>
-		<h3>icon <small><code>String</code></small></h3>
-		<p>default: <i>none</i></p>
-		<p>Prepends a Font Awesome icon to the input.</p>
-		<h3>clearable <small><code>Boolean</code></small></h3>
-		<p>default: <code>false</code></p>
-		<p>Appends a clear button to the input.</p>
-		<h3>label <small><code>String</code></small></h3>
-		<p>default: <i>none</i></p>
-		<p>The input label or title.</p>
-		<h3>help <small><code>String</code></small></h3>
-		<p>default: <i>none</i></p>
-		<p>Adds a small helper text after the input.</p>
-	</div>	
+		<h2>Reference</h2>
+		<h3>Props</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>Property</th>
+					<th>Type</th>
+					<th>Default</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>disabled</td>
+					<td><code>Boolean</code></td>
+					<td><code>false</code></td>
+					<td>disable the component (needed to propagate it to the whole component and not disable only the raw input)</td>
+				</tr>
+				<tr>
+					<td>icon</td>
+					<td><code>String</code></td>
+					<td><code>undefined</code></td>
+					<td>Prepends a Font Awesome icon to the input</td>
+				</tr>
+				<tr>
+					<td>clearable</td>
+					<td><code>Boolean</code></td>
+					<td><code>false</code></td>
+					<td>Appends a clear button to the input</td>
+				</tr>
+				<tr>
+					<td>label</td>
+					<td><code>String</code></td>
+					<td><code>undefined</code></td>
+					<td>The input label or title</td>
+				</tr>
+				<tr>
+					<td>help</td>
+					<td><code>String</code></td>
+					<td><code>undefined</code></td>
+					<td>Adds a small helper text after the input</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </template>
 <script>
 export default {

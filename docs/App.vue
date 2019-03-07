@@ -11,7 +11,9 @@
 					<option :value="theme.class" v-for="theme in themes" :key="theme.class">{{ theme.name }}</option>
 					<option :value="null">None</option>
 				</select>
-				<KCheckbox label="Dark" v-model="dark"/>
+				<label>
+					<input type="checkbox" v-model="dark"/> Dark
+				</label>
 			</div>
 		</header>
 		<main>
@@ -44,7 +46,11 @@ export default {
 				{ title: 'Checkbox', name: 'checkbox' },
 				{ title: 'Input', name: 'input' },
 				{ title: 'Label', name: 'label' },
-				{ title: 'Skeleton', name: 'skeleton' }
+				{ title: 'Skeleton avatar', name: 'skeleton-avatar' },
+				{ title: 'Skeleton image', name: 'skeleton-image' },
+				{ title: 'Skeleton heading', name: 'skeleton-heading' },
+				{ title: 'Skeleton text', name: 'skeleton-text' },
+				{ title: 'Textarea', name: 'textarea' }
 			]
 		};
 	},

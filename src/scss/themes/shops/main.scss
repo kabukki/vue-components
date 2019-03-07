@@ -106,4 +106,19 @@
 	pre {
 		padding: 10px;
 	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+
+		thead th {
+			border-bottom: 2px solid $grey;
+		}
+		tbody td {
+			border-bottom: 1px solid $grey;
+		}
+		td, th {
+			padding: 8px;
+		}
+	}
 }

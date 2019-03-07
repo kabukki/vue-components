@@ -1,18 +1,9 @@
 <template>
 	<div>
-		<h1>Skeleton</h1>
-		<p>Lorem ipsum dolor sit amet</p>
+		<h1>Skeleton image</h1>
+		<p>An image that is loading</p>
 		<hr>
 		<h2>Examples</h2>
-		<h3>Avatar</h3>
-		<div class="flex">
-			<KSkeletonAvatar/>
-			<KSkeletonAvatar :size="60"/>
-			<KSkeletonAvatar :size="80"/>
-			<KSkeletonAvatar :size="100"/>
-		</div>
-		<h3>Heading</h3>
-		<KSkeletonHeading/>
 		<h3>Image</h3>
 		<KSkeletonImage/>
 		<div class="flex">
@@ -20,12 +11,11 @@
 			<KSkeletonImage/>
 			<KSkeletonImage/>
 		</div>
-		<h3>Text</h3>
-		<KSkeletonText/>
-		<hr>
 		<h2>Usage</h2>
+		<b>TODO</b> code excerpt
 		<hr>
-		<h2>Props</h2>
+		<h2>Reference</h2>
+		<p>Nothing to show.</p>
 	</div>
 </template>
 <style lang="scss" scoped>

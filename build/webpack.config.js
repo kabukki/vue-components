@@ -5,13 +5,6 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const themes = require('../themes').webpackEntries;
 
-// Paths to theme CSS entries
-// const themes = {
-// 	'themes/shops': path.resolve(__dirname, '../src/scss/themes/shops/main.scss'),
-// 	'themes/alidhan': path.resolve(__dirname, '../src/scss/themes/alidhan/main.scss'),
-// 	'themes/grammarly': path.resolve(__dirname, '../src/scss/themes/grammarly/main.scss')
-// };
-
 module.exports = {
 	mode: 'production',
 	context: path.resolve(__dirname, '..'),

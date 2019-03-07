@@ -57,22 +57,52 @@
 		<h2>Usage</h2>
 		<b>TODO</b> code excerpt
 		<hr>
-		<h2>Props</h2>
-		<h3>color <small><code>String</code></small></h3>
-		<p>default: <i>none</i></p>
-		<p>one of: 'primary', 'secondary', 'accent', 'success', 'warning', 'error'</p>
-		<h3>outline <small><code>Boolean</code></small></h3>
-		<p>default: <code>false</code></p>
-		<p>Outline style</p>
-		<h3>flat <small><code>Boolean</code></small></h3>
-		<p>default: <code>false</code></p>
-		<p>Flat style</p>
-		<h3>block <small><code>Boolean</code></small></h3>
-		<p>default: <code>false</code></p>
-		<p>Applies width: 100%</p>
-		<h3>loading <small><code>Boolean</code></small></h3>
-		<p>default: <code>false</code></p>
-		<p>Displays a loading icon over the content</p>
+		<h2>Reference</h2>
+		<h3>Props</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>Property</th>
+					<th>Type</th>
+					<th>Default</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>color</td>
+					<td><code>String</code></td>
+					<td><code>undefined</code></td>
+					<td>one of: 'primary', 'secondary', 'accent', 'success', 'warning', 'error'</td>
+				</tr>
+				<tr>
+					<td>outline</td>
+					<td><code>Boolean</code></td>
+					<td><code>false</code></td>
+					<td>Outline style</td>
+				</tr>
+				<tr>
+					<td>flat</td>
+					<td><code>Boolean</code></td>
+					<td><code>false</code></td>
+					<td>Flat style</td>
+				</tr>
+				<tr>
+					<td>block</td>
+					<td><code>Boolean</code></td>
+					<td><code>false</code></td>
+					<td>Applies width: 100%</td>
+				</tr>
+				<tr>
+					<td>loading</td>
+					<td><code>Boolean</code></td>
+					<td><code>false</code></td>
+					<td>Displays a loading icon over the content</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>Slots</h3>
+		<p>--</p>
 	</div>
 </template>
 <style lang="scss" scoped>

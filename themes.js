@@ -11,7 +11,7 @@ const path = require('path');
 exports.themes = [
 	{
 		name: 'Shops',
-		description: 'Shops EIP',
+		description: 'Shops Epitech Innovative Project',
 		class: 'shops',
 		out: 'themes/shops',
 		entry: path.resolve(__dirname, './src/scss/themes/shops/main.scss')

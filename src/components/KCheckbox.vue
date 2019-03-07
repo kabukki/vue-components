@@ -66,7 +66,7 @@ export default {
 			children.push(h('span', [ this.label ]));
 		}
 		
-		return h('label', this.setColor(this.color || 'purple', {
+		return h('label', this.setColor(this.color, {
 			class: this.classes
 		}), children);
 	}

@@ -14,6 +14,7 @@
 		</ul>
 		<p>Add the appropriate class to the root element of your application. All child elements will be styled according to the theme.</p>
 		<pre>{{ usageExample }}</pre>
+		<p>You can also add the <code>dark</code> class to use the dark variant of the theme, if available.</p>
 		<hr>
 		<h2>Typography</h2>
 		<h1>Heading 1</h1>

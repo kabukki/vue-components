@@ -18,6 +18,9 @@
 		transition: color .2s;
 		resize: vertical;
 		
+		&::placeholder {
+			color: $grey;
+		}
 		&:focus {
 			color: $primary;
 		}
