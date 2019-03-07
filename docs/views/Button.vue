@@ -4,7 +4,7 @@
 		<p>Lorem ipsum dolor sit amet</p>
 		<hr>
 		<h2>Examples</h2>
-		<h3>Color</h3>
+		<h3>Solid</h3>
 		<div class="flex">
 			<KButton>Default</KButton>
 			<KButton color="primary">Primary</KButton>

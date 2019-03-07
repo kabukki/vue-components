@@ -15,6 +15,7 @@ export default {
 		classes () {
 			return {
 				'k-button': true,
+				solid: !this.outline && !this.flat,
 				outline: this.outline,
 				flat: this.flat,
 				block: this.block,
