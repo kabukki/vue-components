@@ -7,7 +7,8 @@
     "build": "webpack --config build/webpack.config.js",
     "watch": "webpack --config build/webpack.config.js --watch",
     "docs:serve": "vue-cli-service serve",
-    "docs:build": "vue-cli-service build"
+	"docs:build": "vue-cli-service build",
+	"docs:deploy": "./scripts/deploy.sh"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
