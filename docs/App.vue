@@ -46,6 +46,7 @@ export default {
 				{ title: 'Checkbox', name: 'checkbox' },
 				{ title: 'Input', name: 'input' },
 				{ title: 'Label', name: 'label' },
+				{ title: 'List', name: 'list' },
 				{ title: 'Skeleton avatar', name: 'skeleton-avatar' },
 				{ title: 'Skeleton image', name: 'skeleton-image' },
 				{ title: 'Skeleton heading', name: 'skeleton-heading' },

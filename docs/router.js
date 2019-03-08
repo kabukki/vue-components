@@ -15,6 +15,7 @@ import SkeletonImage from './views/SkeletonImage';
 import SkeletonHeading from './views/SkeletonHeading';
 import SkeletonText from './views/SkeletonText';
 import Textarea from './views/Textarea';
+import List from './views/List';
 
 Vue.use(Router);
 
@@ -76,6 +77,10 @@ export default new Router({
 			path: '/textarea',
 			name: 'textarea',
 			component: Textarea
+		}, {
+			path: '/list',
+			name: 'list',
+			component: List
 		}
 	]
 });

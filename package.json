@@ -33,7 +33,7 @@
     "webpack-cli": "^3.1.2"
   },
   "license": "ISC",
-  "main": "dist/main.js",
+  "main": "dist/lib/main.js",
   "peerDependencies": {
     "@fortawesome/free-regular-svg-icons": "^5.5.0",
     "@fortawesome/free-solid-svg-icons": "^5.5.0",

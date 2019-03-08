@@ -13,7 +13,7 @@ module.exports = {
 		...themes
 	},
 	output: {
-		path: path.resolve(__dirname, '../dist'),
+		path: path.resolve(__dirname, '../dist/lib'),
 		// filename: 'vue-components.js',
 		libraryTarget: 'umd',
 		// Needed for UMD target to work, due to a bug introduced in Webpack 4

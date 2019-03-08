@@ -13,6 +13,5 @@ export { default as KSkeletonImage } from './KSkeletonImage';
 export { default as KSkeletonText } from './KSkeletonText';
 export { default as KSkeletonAvatar } from './KSkeletonAvatar';
 export { default as KList } from './KList';
-export { default as KListItem } from './KListItem';
 export { default as KTextarea } from './KTextarea.vue';
 export { default as KCheckbox } from './KCheckbox';

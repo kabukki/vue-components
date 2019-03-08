@@ -1,5 +1,5 @@
 <template>
-	<ul class="k-list">
+	<div class="k-list">
 		<slot></slot>
-	</ul>
+	</div>
 </template>
