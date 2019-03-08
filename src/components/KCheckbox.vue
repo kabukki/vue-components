@@ -44,8 +44,8 @@ export default {
 						type: 'checkbox'
 					},
 					on: this.listeners,
-					props: {
-						value: this.value
+					domProps: {
+						checked: this.value
 					}
 				}),
 				this.$createElement(FontAwesomeIcon, {
@@ -54,9 +54,6 @@ export default {
 					}
 				})
 			]);
-		},
-		genSpan () {
-			return this.$createElement;
 		}
 	},
 	render (h) {
