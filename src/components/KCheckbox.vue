@@ -8,6 +8,7 @@ export default {
 	inheritAttrs: false,
 	mixins: [ Colorable ],
 	props: {
+		disabled: Boolean,
 		label: String,
 		value: {
 			type: Boolean,
@@ -17,7 +18,8 @@ export default {
 	computed: {
 		classes () {
 			return {
-				'k-checkbox': true
+				'k-checkbox': true,
+				disabled: this.disabled
 			};
 		},
 		listeners () {
@@ -45,7 +47,8 @@ export default {
 					},
 					on: this.listeners,
 					domProps: {
-						checked: this.value
+						checked: this.value,
+						disabled: this.disabled
 					}
 				}),
 				this.$createElement(FontAwesomeIcon, {

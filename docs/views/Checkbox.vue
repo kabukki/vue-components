@@ -20,6 +20,14 @@
 		<KCheckbox label="Success" color="success" v-model="checked"/>
 		<KCheckbox label="Warning" color="warning" v-model="checked"/>
 		<KCheckbox label="Error" color="error" v-model="checked"/>
+		<h3>Disabled</h3>
+		<KCheckbox label="Default" disabled v-model="checked"/>
+		<KCheckbox label="Primary" color="primary" disabled v-model="checked"/>
+		<KCheckbox label="Secondary" color="secondary" disabled v-model="checked"/>
+		<KCheckbox label="Accent" color="accent" disabled v-model="checked"/>
+		<KCheckbox label="Success" color="success" disabled v-model="checked"/>
+		<KCheckbox label="Warning" color="warning" disabled v-model="checked"/>
+		<KCheckbox label="Error" color="error" disabled v-model="checked"/>
 		<hr>
 		<h2>Usage</h2>
 		<p>TODO</p>
