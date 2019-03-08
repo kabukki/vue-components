@@ -10,6 +10,7 @@ export default {
 	props: {
 		disabled: Boolean,
 		label: String,
+		help: String,
 		value: {
 			type: Boolean,
 			required: true
@@ -36,6 +37,20 @@ export default {
 		onInput (e) {
 			this.$emit('input', e.target.checked);
 		},
+		genLabel () {
+			const children = [ this.genControl() ];
+
+			if (this.label) {
+				children.push(this.$createElement('span', [ this.label ]));
+			}
+
+			return this.$createElement('label', children);
+		},
+		genHelper () {
+			return this.$createElement('small', {
+				class: 'help'
+			}, [ this.help ]);
+		},
 		genControl () {
 			return this.$createElement('div', {
 				class: 'control'
@@ -60,13 +75,13 @@ export default {
 		}
 	},
 	render (h) {
-		const children = [ this.genControl() ];
+		const children = [ this.genLabel() ];
 
-		if (this.label) {
-			children.push(h('span', [ this.label ]));
+		if (this.help) {
+			children.push(this.genHelper());
 		}
-		
-		return h('label', this.setColor(this.color, {
+
+		return h('div', this.setColor(this.color, {
 			class: this.classes
 		}), children);
 	}
