@@ -116,6 +116,9 @@
 		tbody td {
 			border-bottom: 1px solid $grey;
 		}
+		tbody tr:hover {
+			background-color: $grey-light;
+		}
 		td, th {
 			padding: 8px;
 		}

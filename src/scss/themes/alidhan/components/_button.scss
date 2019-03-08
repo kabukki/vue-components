@@ -1,13 +1,17 @@
-@import '../_variables';
-@import '../_mixins';
+@import '../variables';
+@import '../mixins';
 
 /**
  * Solid button
  */
-@mixin button ($color) {
+@mixin button-solid ($color) {
 	color: $grey-lightest;
 	background-color: $color;
 	border: 1px solid $color;
+
+	&:hover {
+		opacity: .7;
+	}
 }
 
 /**
@@ -16,9 +20,10 @@
 @mixin button-outline ($color) {
 	color: $color;
 	border: 1px solid $color;
+	background-color: transparent;
 
 	&:hover {
-		color: $white;
+		color: $grey-lightest;
 		background-color: $color;
 	}
 }
@@ -28,9 +33,11 @@
  */
 @mixin button-flat ($color) {
 	color: $color;
+	border: none;
+	background-color: transparent;
 
 	&:hover {
-		// color: $grey-dark;
+		opacity: .7;
 	}
 }
 
@@ -38,24 +45,16 @@
 	@include clickable;
 
 	position: relative;
-	text-transform: uppercase;
 	font-family: inherit;
-	letter-spacing: 1px;
 	min-width: 100px;
 	padding: 10px 20px;
 	margin: 8px 0;
-	z-index: 1;
 	transition: all .2s;
 
-	// Default style
-	color: $grey-dark;
-	background-color: $grey-light;
-	border: 1px solid $grey-light;
-
-	@each $class, $color in $color-map {
-		&.#{$class} {
-			@include button ($color);
-		}
+	.content {
+		z-index: 1;
+		text-transform: uppercase;
+		letter-spacing: 1px;
 	}
 
 	&:disabled {
@@ -64,9 +63,28 @@
 		// background-color: red !important;
 	}
 
+	/**
+	* Solid
+	*/
+	
+	&.solid {
+		// Default style
+		@include button-solid ($grey);
+	
+		@each $class, $color in $color-map {
+			&.#{$class} {
+				@include button-solid ($color);
+			}
+		}
+	}
+
+	/**
+	* Outline
+	*/
+
 	&.outline {
-		transition: background-color .2s;
-		background-color: transparent;
+		// Default style
+		@include button-outline ($grey);
 
 		@each $class, $color in $color-map {
 			&.#{$class} {
@@ -75,10 +93,13 @@
 		}
 	}
 
+	/**
+	* Flat
+	*/
+
 	&.flat {
-		border: none;
-		background-color: transparent;
-		color: $grey-dark;
+		// Default style
+		@include button-flat($grey);
 
 		@each $class, $color in $color-map {
 			&.#{$class} {
@@ -87,15 +108,26 @@
 		}
 	}
 
+	/**
+	* Block
+	*/
+
 	&.block {
 		display: block;
 		width: 100%;
 	}
 
+	/**
+	* Loading
+	*/
+
 	&.loading {
 		pointer-events: none;
 		filter: brightness(.75);
 
+		.content {
+			visibility: hidden;
+		}
 		.loader {
 			position: absolute;
 			top: 0;

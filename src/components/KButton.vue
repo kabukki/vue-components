@@ -24,6 +24,9 @@ export default {
 		}
 	},
 	methods: {
+		genContent () {
+			return this.$createElement('span', { class: 'content' }, [ this.$slots.default ]);
+		},
 		genLoader () {
 			const icon = this.$createElement(FontAwesomeIcon, {
 				props: {
@@ -40,7 +43,7 @@ export default {
 			attrs: this.$attrs,
 			on: this.$listeners
 		});
-		let children = [ this.$slots.default ];
+		let children = [ this.genContent() ];
 
 		if (this.loading) {
 			children.push(this.genLoader());

@@ -45,15 +45,18 @@
 	@include clickable;
 
 	position: relative;
-	text-transform: uppercase;
-	font-family: inherit;
-	letter-spacing: 1px;
 	min-width: 100px;
 	padding: 10px 20px;
 	margin: 8px 0;
-	z-index: 1;
 	transition: all .2s;
-
+	font-family: inherit;
+	
+	.content {
+		z-index: 1;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	
 	&:disabled {
 		filter: grayscale(1);
 		cursor: not-allowed;
@@ -119,7 +122,10 @@
 
 	&.loading {
 		pointer-events: none;
-
+		
+		.content {
+			visibility: hidden;
+		}
 		.loader {
 			position: absolute;
 			top: 0;

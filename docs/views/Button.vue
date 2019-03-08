@@ -53,6 +53,24 @@
 			<KButton color="warning" loading>Warning</KButton>
 			<KButton color="error" loading>Error</KButton>
 		</div>
+		<div class="flex">
+			<KButton outline loading>Default</KButton>
+			<KButton outline color="primary" loading>Primary</KButton>
+			<KButton outline color="secondary" loading>Secondary</KButton>
+			<KButton outline color="accent" loading>Accent</KButton>
+			<KButton outline color="success" loading>Success</KButton>
+			<KButton outline color="warning" loading>Warning</KButton>
+			<KButton outline color="error" loading>Error</KButton>
+		</div>
+		<div class="flex">
+			<KButton flat loading>Default</KButton>
+			<KButton flat color="primary" loading>Primary</KButton>
+			<KButton flat color="secondary" loading>Secondary</KButton>
+			<KButton flat color="accent" loading>Accent</KButton>
+			<KButton flat color="success" loading>Success</KButton>
+			<KButton flat color="warning" loading>Warning</KButton>
+			<KButton flat color="error" loading>Error</KButton>
+		</div>
 		<hr>
 		<h2>Usage</h2>
 		<b>TODO</b> code excerpt
