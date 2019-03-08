@@ -52,10 +52,10 @@
 	@import 'components/textarea';
 
 	/**
-	 * Helpers
-	 */
+	* Helpers
+	*/
 	
-	@import 'helpers';
+	@include helpers;
 	
 	/**
 	 * Common styles

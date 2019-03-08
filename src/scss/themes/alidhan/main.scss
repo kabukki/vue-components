@@ -6,8 +6,8 @@
 
 .alidhan {
 	/**
-	 * Components
-	 */
+	* Components
+	*/
 	
 	@import 'components/alert';
 	@import 'components/avatar';
@@ -28,14 +28,14 @@
 	@import 'components/textarea';
 
 	/**
-	 * Helpers
-	 */
+	* Helpers
+	*/
 	
-	@import 'helpers';
+	@include helpers;
 
 	/**
-	 * Common styles
-	 */
+	* Common styles
+	*/
 	
 	font-family: $font-body;
 	-webkit-font-smoothing: antialiased;
