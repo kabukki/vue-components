@@ -116,6 +116,7 @@ body {
 		> nav {
 			flex: 0 0 auto;	
 			background-color: $grey-light;
+			border-right: 1px solid $grey-dark;
 
 			> a {
 				display: block;
@@ -130,6 +131,7 @@ body {
 				}
 				&:hover {
 					background-color: $grey;
+					color: $grey-lightest;
 				}
 			}
 		}
