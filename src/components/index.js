@@ -7,7 +7,7 @@ export { default as KCardHeader } from './KCardHeader';
 export { default as KCardContent } from './KCardContent';
 export { default as KCardFooter } from './KCardFooter';
 export { default as KInput } from './KInput';
-export { default as KLabel } from './KLabel';
+export { default as KChip } from './KChip';
 export { default as KSkeletonHeading } from './KSkeletonHeading';
 export { default as KSkeletonImage } from './KSkeletonImage';
 export { default as KSkeletonText } from './KSkeletonText';

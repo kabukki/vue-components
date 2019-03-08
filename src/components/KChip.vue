@@ -6,7 +6,7 @@ export default {
 	computed: {
 		classes () {
 			return {
-				'k-label': true
+				'k-chip': true
 			};
 		}
 	},

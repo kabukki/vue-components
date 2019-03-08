@@ -1,18 +1,18 @@
 <template>
 	<div>
-		<h1>Label</h1>
+		<h1>Chip</h1>
 		<p>Lorem ipsum dolor sit amet</p>
 		<hr>
 		<h2>Examples</h2>
 		<h3>Color</h3>
 		<div class="flex">
-			<KLabel>Default</KLabel>
-			<KLabel color="primary">Primary</KLabel>
-			<KLabel color="secondary">Secondary</KLabel>
-			<KLabel color="accent">Accent</KLabel>
-			<KLabel color="success">Success</KLabel>
-			<KLabel color="warning">Warning</KLabel>
-			<KLabel color="error">Error</KLabel>
+			<KChip>Default</KChip>
+			<KChip color="primary">Primary</KChip>
+			<KChip color="secondary">Secondary</KChip>
+			<KChip color="accent">Accent</KChip>
+			<KChip color="success">Success</KChip>
+			<KChip color="warning">Warning</KChip>
+			<KChip color="error">Error</KChip>
 		</div>
 		<hr>
 		<h2>Usage</h2>

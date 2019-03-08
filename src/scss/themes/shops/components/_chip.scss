@@ -1,16 +1,16 @@
 @import '../_variables';
 
 /**
- * Basic label
+ * Basic chip
  */
-@mixin label ($color) {
+@mixin chip ($color) {
 	// Old, bad contrast version
 	color: $white;
 	background-color: $color;
 	border: 1px solid $color;
 }
 
-.k-label {
+.k-chip {
 	display: inline-block;
 	white-space: nowrap;
 	border-radius: 20px;
@@ -18,11 +18,11 @@
 	margin: 4px;
 
 	// Default
-	border: 1px solid $grey;
+	border: 1px solid $grey-lightest;
 
 	@each $class, $color in $color-map {
 		&.#{$class} {
-			@include label ($color);
+			@include chip ($color);
 		}
 	}
 

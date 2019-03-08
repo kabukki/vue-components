@@ -9,7 +9,7 @@ import Button from './views/Button';
 import Card from './views/Card';
 import Checkbox from './views/Checkbox';
 import Input from './views/Input';
-import Label from './views/Label';
+import Chip from './views/Chip';
 import SkeletonAvatar from './views/SkeletonAvatar';
 import SkeletonImage from './views/SkeletonImage';
 import SkeletonHeading from './views/SkeletonHeading';
@@ -54,9 +54,9 @@ export default new Router({
 			name: 'input',
 			component: Input
 		}, {
-			path: '/label',
-			name: 'label',
-			component: Label
+			path: '/chip',
+			name: 'chip',
+			component: Chip
 		}, {
 			path: '/skeleton-avatar',
 			name: 'skeleton-avatar',
