@@ -4,7 +4,7 @@
 		<p>Lorem ipsum dolor sit amet</p>
 		<hr>
 		<h2>Examples</h2>
-		<h3>Color</h3>
+		<h3>Solid</h3>
 		<div class="flex">
 			<KChip>Default</KChip>
 			<KChip color="primary">Primary</KChip>
@@ -13,6 +13,16 @@
 			<KChip color="success">Success</KChip>
 			<KChip color="warning">Warning</KChip>
 			<KChip color="error">Error</KChip>
+		</div>
+		<h3>Outline</h3>
+		<div class="flex">
+			<KChip outline>Default</KChip>
+			<KChip color="primary" outline>Primary</KChip>
+			<KChip color="secondary" outline>Secondary</KChip>
+			<KChip color="accent" outline>Accent</KChip>
+			<KChip color="success" outline>Success</KChip>
+			<KChip color="warning" outline>Warning</KChip>
+			<KChip color="error" outline>Error</KChip>
 		</div>
 		<hr>
 		<h2>Usage</h2>
@@ -35,6 +45,12 @@
 					<td><code>String</code></td>
 					<td><code>undefined</code></td>
 					<td>one of: 'primary', 'secondary', 'accent', 'success', 'warning', 'error'</td>
+				</tr>
+				<tr>
+					<td>outline</td>
+					<td><code>Boolean</code></td>
+					<td><code>false</code></td>
+					<td>Outline style</td>
 				</tr>
 			</tbody>
 		</table>
