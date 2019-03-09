@@ -20,6 +20,7 @@ export default {
 		const data = {
 			class: this.classes,
 			style: {
+				minWidth: this.actualSize,
 				width: this.actualSize,
 				height: this.actualSize
 			}
