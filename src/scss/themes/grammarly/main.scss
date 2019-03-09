@@ -101,6 +101,10 @@
 		}
 	}
 
+	* {
+		box-sizing: border-box;
+	}
+	
 	hr {
 		border: none;
 		height: 1px;
