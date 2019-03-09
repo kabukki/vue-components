@@ -46,6 +46,10 @@
 			color: $grey-darkest;
 		}
 
+		strong, b {
+			color: $grey-darkest;
+		}
+	
 		code {
 			background-color: $grey-light;
 		}
@@ -68,6 +72,10 @@
 			color: $grey-lightest;
 		}
 
+		strong, b {
+			color: $grey-lightest;
+		}
+	
 		code {
 			background-color: $grey-dark;
 		}
@@ -132,6 +140,12 @@
 		}
 		td, th {
 			padding: 8px;
+		}
+	}
+
+	ul {
+		li {
+			line-height: 1.5;
 		}
 	}
 }

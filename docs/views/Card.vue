@@ -6,6 +6,7 @@
 		<h2>Examples</h2>
 		<h3>Basic</h3>
 		<KCard>
+			<h3>Title</h3>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id lectus neque.
 				Mauris aliquam et turpis vitae dictum. Phasellus at lorem lorem. Quisque vitae augue nulla.
