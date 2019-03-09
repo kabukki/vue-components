@@ -1,7 +1,7 @@
 <template>
-	<div class="k-textarea">
+	<div :class="classes">
 		<span class="label" v-if="label">{{ label }}</span>
-		<textarea v-bind="$attrs" :value="value" @input="onInput"></textarea>
+		<textarea v-bind="$attrs" v-on="listeners" :value="value" :disabled="disabled"></textarea>
 		<small class="help" v-if="help">{{ help }}</small>
 	</div>
 </template>
@@ -9,11 +9,26 @@
 export default {
 	inheritAttrs: false,
 	props: {
+		disabled: Boolean,
 		label: String,
 		help: String,
 		value: {
 			type: String,
 			required: true
+		}
+	},
+	computed: {
+		classes () {
+			return {
+				'k-textarea': true,
+				disabled: this.disabled
+			};
+		},
+		listeners () {
+			return {
+				...this.$listeners,
+				input: this.onInput
+			};
 		}
 	},
 	methods: {

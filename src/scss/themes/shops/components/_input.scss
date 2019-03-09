@@ -28,7 +28,7 @@
 			background-color: inherit;
 			border: none;
 			padding: 8px;
-			transition: color .2s;
+			transition: all .2s;
 		}
 		.clear {
 			cursor: pointer;
@@ -59,7 +59,7 @@
 
 				&::placeholder {
 					color: $grey;
-				}	
+				}
 				&:focus {
 					color: $primary;
 				}	
@@ -72,6 +72,10 @@
 
 				input {
 					color: $grey;
+
+					&::placeholder {
+						color: $grey;
+					}
 				}
 			}
 		}	
@@ -89,10 +93,10 @@
 
 				&::placeholder {
 					color: $grey-dark;
-				}	
+				}
 				&:focus {
 					color: $primary;
-				}	
+				}
 			}
 		}
 
@@ -102,6 +106,10 @@
 
 				input {
 					color: $grey;
+					
+					&::placeholder {
+						color: $grey;
+					}
 				}
 			}
 		}	
