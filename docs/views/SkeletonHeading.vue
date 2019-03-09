@@ -6,6 +6,8 @@
 		<h2>Examples</h2>
 		<h3>Heading</h3>
 		<KSkeletonHeading/>
+		<KSkeletonHeading/>
+		<KSkeletonHeading/>
 		<h2>Usage</h2>
 		<b>TODO</b> code excerpt
 		<hr>

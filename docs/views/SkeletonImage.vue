@@ -18,10 +18,3 @@
 		<p>Nothing to show.</p>
 	</div>
 </template>
-<style lang="scss" scoped>
-.flex {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-</style>

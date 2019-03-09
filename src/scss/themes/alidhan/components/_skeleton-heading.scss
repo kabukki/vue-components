@@ -1,8 +1,8 @@
-@import '../_mixins';
+@import '../mixins';
 
 .k-skeleton-heading {
 	@include skeleton-element;
-	min-width: 25%;
+	min-width: 180px;
 	max-width: 50%;
 	height: 24px;
 }

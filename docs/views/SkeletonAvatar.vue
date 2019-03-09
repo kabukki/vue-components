@@ -38,10 +38,3 @@
 		</table>
 	</div>
 </template>
-<style lang="scss" scoped>
-.flex {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-}
-</style>
