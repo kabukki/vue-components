@@ -1,4 +1,5 @@
-@import '../_variables';
+@import '../variables';
+@import '../../mixins';
 
 .k-card {
 	display: flex;
@@ -7,8 +8,6 @@
 	// box-sizing: border-box;
 	// border: 1px solid hsl(206, 23, 73);
 	border-radius: 0;
-	box-shadow: 0 2px 4px $grey;
-	background-color: $white;
 	margin: 8px 0;
 
 	&.hoverable {
@@ -17,5 +16,19 @@
 		&:hover {
 			transform: translateY(-5px);
 		}
+	}
+}
+
+@include light {
+	.k-card {
+		box-shadow: 0 2px 4px $grey;
+		background-color: $white;
+	}
+}
+
+@include dark {
+	.k-card {
+		box-shadow: 0 2px 4px $black;
+		background-color: $grey-darkest;	
 	}
 }

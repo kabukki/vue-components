@@ -57,6 +57,10 @@
 			background-color: $grey-darkest;
 			color: $grey-lightest;
 		}
+
+		table tbody tr:hover {
+			background-color: $grey-light;
+		}
 	}
 
 	@include dark {
@@ -74,6 +78,10 @@
 		pre {
 			background-color: $grey-lightest;
 			color: $grey-darkest;
+		}
+
+		table tbody tr:hover {
+			background-color: $grey-dark;
 		}
 	}
 
@@ -121,9 +129,6 @@
 		}
 		tbody td {
 			border-bottom: 1px solid $grey;
-		}
-		tbody tr:hover {
-			background-color: $grey-light;
 		}
 		td, th {
 			padding: 8px;

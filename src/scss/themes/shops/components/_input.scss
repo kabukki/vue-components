@@ -1,16 +1,16 @@
 @import '../_variables';
+@import '../../mixins';
 
 .k-input {
 
 	.label {
 		font-size: 20px;
 	}
+
 	.input {
 		display: flex;
 		align-items: center;
-		background-color: $white;
 		line-height: 1.5;
-		box-shadow: 0 2px 4px $grey;
 		margin: 8px 0;
 		width: 100%;
 		transition: background-color .2s;
@@ -26,17 +26,9 @@
 			font-size: 20px;
 			font-family: inherit;
 			background-color: inherit;
-			color: $grey-dark;
 			border: none;
 			padding: 8px;
 			transition: color .2s;
-
-			&::placeholder {
-				color: $grey;
-			}
-			&:focus {
-				color: $primary;
-			}
 		}
 		.clear {
 			cursor: pointer;
@@ -44,16 +36,74 @@
 			color: $grey-darkest;
 		}
 	}
+
 	.help {
 		
 	}
 
 	&.disabled {
-		pointer-events: none;
-		background-color: $grey-lightest;
-
-		input {
-			color: $grey;
+		.input {
+			pointer-events: none;
 		}
+	}
+}
+
+@include light {
+	.k-input {
+		.input {
+			background-color: $white;
+			box-shadow: 0 2px 4px $grey;
+
+			input {
+				color: $grey-dark;
+
+				&::placeholder {
+					color: $grey;
+				}	
+				&:focus {
+					color: $primary;
+				}	
+			}
+		}
+
+		&.disabled {
+			.input {
+				background-color: $grey-lightest;
+
+				input {
+					color: $grey;
+				}
+			}
+		}	
+	}
+}
+
+@include dark {
+	.k-input {
+		.input {
+			background-color: $grey;
+			box-shadow: 0 2px 4px $black;
+
+			input {
+				color: $grey-darkest;
+
+				&::placeholder {
+					color: $grey-dark;
+				}	
+				&:focus {
+					color: $primary;
+				}	
+			}
+		}
+
+		&.disabled {
+			.input {
+				background-color: $grey-dark;
+
+				input {
+					color: $grey;
+				}
+			}
+		}	
 	}
 }
