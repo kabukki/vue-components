@@ -22,9 +22,7 @@
 					{{ link.title }}
 				</router-link>
 			</nav>
-			<div class="content" :class="themeClasses">
-				<router-view></router-view>
-			</div>
+			<router-view class="content" :class="themeClasses"></router-view>
 		</main>
 	</div>
 </template>
@@ -92,6 +90,7 @@ body {
 		color: $grey-light;
 		padding: 12px;
 		flex-shrink: 0;
+		overflow: auto;
 
 		#logo {
 			display: block;
@@ -117,6 +116,7 @@ body {
 			flex: 0 0 auto;	
 			background-color: $grey-light;
 			border-right: 1px solid $grey-dark;
+			overflow-y: auto;
 
 			> a {
 				display: block;
