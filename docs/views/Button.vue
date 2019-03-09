@@ -77,48 +77,50 @@
 		<hr>
 		<h2>Reference</h2>
 		<h3>Props</h3>
-		<table>
-			<thead>
-				<tr>
-					<th>Property</th>
-					<th>Type</th>
-					<th>Default</th>
-					<th>Description</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>color</td>
-					<td><code>String</code></td>
-					<td><code>undefined</code></td>
-					<td>one of: 'primary', 'secondary', 'accent', 'success', 'warning', 'error'</td>
-				</tr>
-				<tr>
-					<td>outline</td>
-					<td><code>Boolean</code></td>
-					<td><code>false</code></td>
-					<td>Outline style</td>
-				</tr>
-				<tr>
-					<td>flat</td>
-					<td><code>Boolean</code></td>
-					<td><code>false</code></td>
-					<td>Flat style</td>
-				</tr>
-				<tr>
-					<td>block</td>
-					<td><code>Boolean</code></td>
-					<td><code>false</code></td>
-					<td>Applies width: 100%</td>
-				</tr>
-				<tr>
-					<td>loading</td>
-					<td><code>Boolean</code></td>
-					<td><code>false</code></td>
-					<td>Displays a loading icon over the content</td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="overflow">
+			<table>
+				<thead>
+					<tr>
+						<th>Property</th>
+						<th>Type</th>
+						<th>Default</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>color</td>
+						<td><code>String</code></td>
+						<td><code>undefined</code></td>
+						<td>one of: 'primary', 'secondary', 'accent', 'success', 'warning', 'error'</td>
+					</tr>
+					<tr>
+						<td>outline</td>
+						<td><code>Boolean</code></td>
+						<td><code>false</code></td>
+						<td>Outline style</td>
+					</tr>
+					<tr>
+						<td>flat</td>
+						<td><code>Boolean</code></td>
+						<td><code>false</code></td>
+						<td>Flat style</td>
+					</tr>
+					<tr>
+						<td>block</td>
+						<td><code>Boolean</code></td>
+						<td><code>false</code></td>
+						<td>Applies width: 100%</td>
+					</tr>
+					<tr>
+						<td>loading</td>
+						<td><code>Boolean</code></td>
+						<td><code>false</code></td>
+						<td>Displays a loading icon over the content</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 		<h3>Slots</h3>
 		<p>--</p>
 	</div>

@@ -18,23 +18,25 @@
 		<hr>
 		<h2>Reference</h2>
 		<h3>Props</h3>
-		<table>
-			<thead>
-				<tr>
-					<th>Property</th>
-					<th>Type</th>
-					<th>Default</th>
-					<th>Description</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>size</td>
-					<td><code>Number</code></td>
-					<td><code>40</code></td>
-					<td>Avatar size in px.</td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="overflow">
+			<table>
+				<thead>
+					<tr>
+						<th>Property</th>
+						<th>Type</th>
+						<th>Default</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>size</td>
+						<td><code>Number</code></td>
+						<td><code>40</code></td>
+						<td>Avatar size in px.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 </template>

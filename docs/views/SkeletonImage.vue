@@ -6,7 +6,7 @@
 		<h2>Examples</h2>
 		<h3>Image</h3>
 		<KSkeletonImage/>
-		<div class="flex">
+		<div class="flex wrap">
 			<KSkeletonImage/>
 			<KSkeletonImage/>
 			<KSkeletonImage/>

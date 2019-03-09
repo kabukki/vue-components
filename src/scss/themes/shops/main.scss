@@ -114,6 +114,7 @@
 	table {
 		width: 100%;
 		border-collapse: collapse;
+		white-space: nowrap;
 
 		thead th {
 			border-bottom: 2px solid $grey;

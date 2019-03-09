@@ -18,29 +18,31 @@
 		<hr>
 		<h2>Reference</h2>
 		<h3>Props</h3>
-		<table>
-			<thead>
-				<tr>
-					<th>Property</th>
-					<th>Type</th>
-					<th>Default</th>
-					<th>Description</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>color</td>
-					<td><code>String</code></td>
-					<td><code>undefined</code></td>
-					<td>one of: 'red', 'green', 'yellow', 'blue'</td>
-				</tr>
-				<tr>
-					<td>image</td>
-					<td><code>String</code></td>
-					<td><code>undefined</code></td>
-					<td>Background image</td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="overflow">
+			<table>
+				<thead>
+					<tr>
+						<th>Property</th>
+						<th>Type</th>
+						<th>Default</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>color</td>
+						<td><code>String</code></td>
+						<td><code>undefined</code></td>
+						<td>one of: 'red', 'green', 'yellow', 'blue'</td>
+					</tr>
+					<tr>
+						<td>image</td>
+						<td><code>String</code></td>
+						<td><code>undefined</code></td>
+						<td>Background image</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 </template>

@@ -14,23 +14,25 @@
 		<hr>
 		<h2>Reference</h2>
 		<h3>Props</h3>
-		<table>
-			<thead>
-				<tr>
-					<th>Property</th>
-					<th>Type</th>
-					<th>Default</th>
-					<th>Description</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>type</td>
-					<td><code>String</code></td>
-					<td><code>error</code></td>
-					<td>Defines the type of the alert. One of: 'success', 'warning', 'error'</td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="overflow">
+			<table>
+				<thead>
+					<tr>
+						<th>Property</th>
+						<th>Type</th>
+						<th>Default</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>type</td>
+						<td><code>String</code></td>
+						<td><code>error</code></td>
+						<td>Defines the type of the alert. One of: 'success', 'warning', 'error'</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 </template>

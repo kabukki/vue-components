@@ -151,7 +151,14 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
+	overflow: auto;
+
+	&.wrap {
+		flex-wrap: wrap;
+	}
+}
+
+.overflow {
 	overflow: auto;
 }
 </style>

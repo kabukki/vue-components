@@ -50,42 +50,44 @@
 		<hr>
 		<h2>Reference</h2>
 		<h3>Props</h3>
-		<table>
-			<thead>
-				<tr>
-					<th>Property</th>
-					<th>Type</th>
-					<th>Default</th>
-					<th>Description</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>color</td>
-					<td><code>String</code></td>
-					<td><code>undefined</code></td>
-					<td>one of: 'primary', 'secondary', 'accent', 'success', 'warning', 'error'</td>
-				</tr>
-				<tr>
-					<td>disabled</td>
-					<td><code>Boolean</code></td>
-					<td><code>false</code></td>
-					<td>disable the component</td>
-				</tr>
-				<tr>
-					<td>label</td>
-					<td><code>String</code></td>
-					<td><code>undefined</code></td>
-					<td>The checkbox label</td>
-				</tr>
-				<tr>
-					<td>help</td>
-					<td><code>String</code></td>
-					<td><code>undefined</code></td>
-					<td>Adds a small helper text after the input</td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="overflow">
+			<table>
+				<thead>
+					<tr>
+						<th>Property</th>
+						<th>Type</th>
+						<th>Default</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>color</td>
+						<td><code>String</code></td>
+						<td><code>undefined</code></td>
+						<td>one of: 'primary', 'secondary', 'accent', 'success', 'warning', 'error'</td>
+					</tr>
+					<tr>
+						<td>disabled</td>
+						<td><code>Boolean</code></td>
+						<td><code>false</code></td>
+						<td>disable the component</td>
+					</tr>
+					<tr>
+						<td>label</td>
+						<td><code>String</code></td>
+						<td><code>undefined</code></td>
+						<td>The checkbox label</td>
+					</tr>
+					<tr>
+						<td>help</td>
+						<td><code>String</code></td>
+						<td><code>undefined</code></td>
+						<td>Adds a small helper text after the input</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 </template>
 <script>

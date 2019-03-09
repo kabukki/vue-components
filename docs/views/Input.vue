@@ -25,48 +25,50 @@
 		<hr>
 		<h2>Reference</h2>
 		<h3>Props</h3>
-		<table>
-			<thead>
-				<tr>
-					<th>Property</th>
-					<th>Type</th>
-					<th>Default</th>
-					<th>Description</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>disabled</td>
-					<td><code>Boolean</code></td>
-					<td><code>false</code></td>
-					<td>disable the component (needed to propagate it to the whole component and not disable only the raw input)</td>
-				</tr>
-				<tr>
-					<td>icon</td>
-					<td><code>String</code></td>
-					<td><code>undefined</code></td>
-					<td>Prepends a Font Awesome icon to the input</td>
-				</tr>
-				<tr>
-					<td>clearable</td>
-					<td><code>Boolean</code></td>
-					<td><code>false</code></td>
-					<td>Appends a clear button to the input</td>
-				</tr>
-				<tr>
-					<td>label</td>
-					<td><code>String</code></td>
-					<td><code>undefined</code></td>
-					<td>The input label or title</td>
-				</tr>
-				<tr>
-					<td>help</td>
-					<td><code>String</code></td>
-					<td><code>undefined</code></td>
-					<td>Adds a small helper text after the input</td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="overflow">
+			<table>
+				<thead>
+					<tr>
+						<th>Property</th>
+						<th>Type</th>
+						<th>Default</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>disabled</td>
+						<td><code>Boolean</code></td>
+						<td><code>false</code></td>
+						<td>disable the component (needed to propagate it to the whole component and not disable only the raw input)</td>
+					</tr>
+					<tr>
+						<td>icon</td>
+						<td><code>String</code></td>
+						<td><code>undefined</code></td>
+						<td>Prepends a Font Awesome icon to the input</td>
+					</tr>
+					<tr>
+						<td>clearable</td>
+						<td><code>Boolean</code></td>
+						<td><code>false</code></td>
+						<td>Appends a clear button to the input</td>
+					</tr>
+					<tr>
+						<td>label</td>
+						<td><code>String</code></td>
+						<td><code>undefined</code></td>
+						<td>The input label or title</td>
+					</tr>
+					<tr>
+						<td>help</td>
+						<td><code>String</code></td>
+						<td><code>undefined</code></td>
+						<td>Adds a small helper text after the input</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 </template>
 <script>

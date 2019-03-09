@@ -16,36 +16,38 @@
 		<p>TODO</p>
 		<hr>
 		<h2>Reference</h2>
-		<table>
-			<thead>
-				<tr>
-					<th>Property</th>
-					<th>Type</th>
-					<th>Default</th>
-					<th>Description</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>disabled</td>
-					<td><code>Boolean</code></td>
-					<td><code>false</code></td>
-					<td>disable the component</td>
-				</tr>
-				<tr>
-					<td>label</td>
-					<td><code>String</code></td>
-					<td><code>undefined</code></td>
-					<td>The input label or title</td>
-				</tr>
-				<tr>
-					<td>help</td>
-					<td><code>String</code></td>
-					<td><code>undefined</code></td>
-					<td>Adds a small helper text after the input</td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="overflow">
+			<table>
+				<thead>
+					<tr>
+						<th>Property</th>
+						<th>Type</th>
+						<th>Default</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>disabled</td>
+						<td><code>Boolean</code></td>
+						<td><code>false</code></td>
+						<td>disable the component</td>
+					</tr>
+					<tr>
+						<td>label</td>
+						<td><code>String</code></td>
+						<td><code>undefined</code></td>
+						<td>The input label or title</td>
+					</tr>
+					<tr>
+						<td>help</td>
+						<td><code>String</code></td>
+						<td><code>undefined</code></td>
+						<td>Adds a small helper text after the input</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 </template>
 <script>
