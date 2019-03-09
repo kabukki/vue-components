@@ -5,18 +5,27 @@
 		<hr>
 		<h2>Examples</h2>
 		<h3>Basic</h3>
-		<KCard>Lorem ipsum dolor sit amet</KCard>
-		<h3>With sections</h3>
 		<KCard>
-			<KCardHeader>Header</KCardHeader>
-			<KCardContent>Content</KCardContent>
-			<KCardFooter>Footer</KCardFooter>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id lectus neque.
+				Mauris aliquam et turpis vitae dictum. Phasellus at lorem lorem. Quisque vitae augue nulla.
+				Mauris et vulputate nisi. Cras sagittis vulputate varius. Quisque ut diam luctus,
+				tincidunt lacus nec, imperdiet neque. Proin elementum erat sed dictum porttitor.
+				Pellentesque id neque vel neque aliquam rhoncus nec non magna. Sed varius,
+				mauris eget cursus eleifend, tellus enim volutpat arcu, in tempor arcu purus vitae dolor.
+			</p>
 		</KCard>
 		<h3>Hoverable</h3>
 		<KCard hoverable>
-			<KCardHeader>Header</KCardHeader>
-			<KCardContent>Content</KCardContent>
-			<KCardFooter>Footer</KCardFooter>
+			<h3>Title</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id lectus neque.
+				Mauris aliquam et turpis vitae dictum. Phasellus at lorem lorem. Quisque vitae augue nulla.
+				Mauris et vulputate nisi. Cras sagittis vulputate varius. Quisque ut diam luctus,
+				tincidunt lacus nec, imperdiet neque. Proin elementum erat sed dictum porttitor.
+				Pellentesque id neque vel neque aliquam rhoncus nec non magna. Sed varius,
+				mauris eget cursus eleifend, tellus enim volutpat arcu, in tempor arcu purus vitae dolor.
+			</p>
 		</KCard>
 		<hr>
 		<h2>Usage</h2>

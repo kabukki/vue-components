@@ -1,9 +1,5 @@
-@import '_variables';
-@import '_keyframes';
-
-@mixin card-part {
-	padding: 10px;
-}
+@import 'variables';
+@import 'keyframes';
 
 @mixin clickable {
 	cursor: pointer;

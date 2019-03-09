@@ -2,13 +2,9 @@
 @import '../../mixins';
 
 .k-card {
-	display: flex;
-	flex-direction: column;
 	overflow: hidden;
-	// box-sizing: border-box;
-	// border: 1px solid hsl(206, 23, 73);
-	border-radius: 0;
 	margin: 8px 0;
+	padding: 10px;
 
 	&.hoverable {
 		transition: transform .2s;
@@ -23,12 +19,14 @@
 	.k-card {
 		box-shadow: 0 2px 4px $grey;
 		background-color: $white;
+		color: $grey-dark;
 	}
 }
 
 @include dark {
 	.k-card {
 		box-shadow: 0 2px 4px $black;
-		background-color: $grey-darkest;	
+		background-color: $grey-dark;
+		color: $grey-darkest;
 	}
 }
