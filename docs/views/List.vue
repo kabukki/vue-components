@@ -7,7 +7,7 @@
 		<h3>List of cards</h3>
 		<KList>
 			<KCard v-for="n in 5" :key="n">
-				<KCardContent>Lorem ipsum</KCardContent>
+				<p>Lorem ipsum</p>
 			</KCard>
 		</KList>
 		<hr>
