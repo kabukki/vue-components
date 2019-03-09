@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 import Home from './views/Home';
+import Examples from './views/Examples';
 import Alert from './views/Alert';
 import Avatar from './views/Avatar';
 import Banner from './views/Banner';
@@ -25,6 +26,10 @@ export default new Router({
 			path: '/',
 			name: 'home',
 			component: Home
+		}, {
+			path: '/examples',
+			name: 'examples',
+			component: Examples
 		}, {
 			path: '/alert',
 			name: 'alert',

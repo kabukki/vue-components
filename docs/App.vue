@@ -18,7 +18,7 @@
 		</header>
 		<main>
 			<nav>
-				<router-link :to="{ name: link.name }" active-class="active" v-for="link in links" :key="link.name">
+				<router-link :to="{ name: link.name }" active-class="active" exact v-for="link in links" :key="link.name">
 					{{ link.title }}
 				</router-link>
 			</nav>
@@ -36,6 +36,8 @@ export default {
 			theme: 'shops',
 			themes,
 			links: [
+				{ title: 'Home', name: 'home' },
+				{ title: 'Examples', name: 'examples' },
 				{ title: 'Alert', name: 'alert' },
 				{ title: 'Avatar', name: 'avatar' },
 				{ title: 'Banner', name: 'banner' },
