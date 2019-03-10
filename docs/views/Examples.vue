@@ -1,8 +1,8 @@
 <template>
-	<div>
-		<h1>Examples</h1>
-		<p>A collection of layout examples using these components.</p>
-		<hr>
+	<ComponentDoc
+		name="Examples"
+		description="A collection of layout examples using these components."
+	>
 		<KCard id="card" hoverable>
 			<section>
 				<h1>Lorem ipsum dolor sit amet</h1>
@@ -33,9 +33,7 @@
 				</div>
 			</section>
 		</KCard>
-		<hr>
-
-	</div>
+	</ComponentDoc>
 </template>
 <script>
 export default {

@@ -6,6 +6,11 @@ import router from './router';
 import './plugins/fontAwesome';
 import './plugins/vueComponents';
 
+// Local components
+import ComponentDoc from './components/ComponentDoc';
+
+Vue.component('ComponentDoc', ComponentDoc);
+
 new Vue({
 	router,
 	render: h => h(App)

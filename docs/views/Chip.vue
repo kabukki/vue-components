@@ -1,9 +1,8 @@
 <template>
-	<div>
-		<h1>Chip</h1>
-		<p>Lorem ipsum dolor sit amet</p>
-		<hr>
-		<h2>Examples</h2>
+	<ComponentDoc
+		name="Chip"
+		:reference="reference"
+	>
 		<h3>Solid</h3>
 		<div class="flex">
 			<KChip>Default</KChip>
@@ -24,37 +23,29 @@
 			<KChip color="warning" outline>Warning</KChip>
 			<KChip color="error" outline>Error</KChip>
 		</div>
-		<hr>
-		<h2>Usage</h2>
-		<b>TODO</b> code excerpt
-		<hr>
-		<h2>Reference</h2>
-		<h3>Props</h3>
-		<div class="overflow">
-			<table>
-				<thead>
-					<tr>
-						<th>Property</th>
-						<th>Type</th>
-						<th>Default</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>color</td>
-						<td><code>String</code></td>
-						<td><code>undefined</code></td>
-						<td>one of: 'primary', 'secondary', 'accent', 'success', 'warning', 'error'</td>
-					</tr>
-					<tr>
-						<td>outline</td>
-						<td><code>Boolean</code></td>
-						<td><code>false</code></td>
-						<td>Outline style</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
+	</ComponentDoc>
 </template>
+<script>
+export default {
+	data () {
+		return {
+			rating: 3,
+			reference: {
+				props: [
+					{
+						name: 'color',
+						type: String,
+						default: undefined,
+						description: 'one of: primary, secondary, accent, success, warning, error'
+					}, {
+						name: 'outline',
+						type: Boolean,
+						default: false,
+						description: 'Outline style'
+					}
+				]
+			}
+		};
+	}	
+};
+</script>

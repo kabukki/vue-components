@@ -1,9 +1,8 @@
 <template>
-	<div>
-		<h1>Button</h1>
-		<p>Lorem ipsum dolor sit amet</p>
-		<hr>
-		<h2>Examples</h2>
+	<ComponentDoc
+		name="Button"
+		:reference="reference"
+	>
 		<h3>Solid</h3>
 		<div class="flex">
 			<KButton>Default</KButton>
@@ -71,57 +70,44 @@
 			<KButton flat color="warning" loading>Warning</KButton>
 			<KButton flat color="error" loading>Error</KButton>
 		</div>
-		<hr>
-		<h2>Usage</h2>
-		<b>TODO</b> code excerpt
-		<hr>
-		<h2>Reference</h2>
-		<h3>Props</h3>
-		<div class="overflow">
-			<table>
-				<thead>
-					<tr>
-						<th>Property</th>
-						<th>Type</th>
-						<th>Default</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>color</td>
-						<td><code>String</code></td>
-						<td><code>undefined</code></td>
-						<td>one of: 'primary', 'secondary', 'accent', 'success', 'warning', 'error'</td>
-					</tr>
-					<tr>
-						<td>outline</td>
-						<td><code>Boolean</code></td>
-						<td><code>false</code></td>
-						<td>Outline style</td>
-					</tr>
-					<tr>
-						<td>flat</td>
-						<td><code>Boolean</code></td>
-						<td><code>false</code></td>
-						<td>Flat style</td>
-					</tr>
-					<tr>
-						<td>block</td>
-						<td><code>Boolean</code></td>
-						<td><code>false</code></td>
-						<td>Applies width: 100%</td>
-					</tr>
-					<tr>
-						<td>loading</td>
-						<td><code>Boolean</code></td>
-						<td><code>false</code></td>
-						<td>Displays a loading icon over the content</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<h3>Slots</h3>
-		<p>--</p>
-	</div>
+	</ComponentDoc>
 </template>
+<script>
+export default {
+	data ()	 {
+		return {
+			reference: {
+				props: [
+					{
+						name: 'color',
+						type: String,
+						default: undefined,
+						description: 'one of: primary, secondary, accent, success, warning, error'
+					}, {
+						name: 'outline',
+						type: Boolean,
+						default: false,
+						description: 'Outline style'
+					}, {
+						name: 'flat',
+						type: Boolean,
+						default: false,
+						description: 'Flat style'
+					}, {
+						name: 'block',
+						type: Boolean,
+						default: false,
+						description: 'Applies width: 100%'
+					}, {
+						name: 'loading',
+						type: Boolean,
+						default: false,
+						description: 'Displays a loading icon over the content'
+					}
+				],
+				slots: []
+			}
+		};
+	}
+};
+</script>

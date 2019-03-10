@@ -1,9 +1,8 @@
 <template>
-	<div>
-		<h1>Skeleton image</h1>
-		<p>An image that is loading</p>
-		<hr>
-		<h2>Examples</h2>
+	<ComponentDoc
+		name="Skeleton image"
+		description="An image that is loading"
+	>
 		<h3>Image</h3>
 		<KSkeletonImage/>
 		<div class="flex wrap">
@@ -11,10 +10,5 @@
 			<KSkeletonImage/>
 			<KSkeletonImage/>
 		</div>
-		<h2>Usage</h2>
-		<b>TODO</b> code excerpt
-		<hr>
-		<h2>Reference</h2>
-		<p>Nothing to show.</p>
-	</div>
+	</ComponentDoc>
 </template>

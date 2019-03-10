@@ -1,9 +1,9 @@
 <template>
-	<div>
-		<h1>Card</h1>
-		<p>Card component</p>
-		<hr>
-		<h2>Examples</h2>
+	<ComponentDoc
+		name="Card"
+		description="Card component"
+		:reference="reference"
+	>
 		<h3>Basic</h3>
 		<KCard>
 			<h3>Title</h3>
@@ -28,31 +28,23 @@
 				mauris eget cursus eleifend, tellus enim volutpat arcu, in tempor arcu purus vitae dolor.
 			</p>
 		</KCard>
-		<hr>
-		<h2>Usage</h2>
-		<b>TODO</b> code excerpt
-		<hr>
-		<h2>Reference</h2>
-		<h3>Props</h3>
-		<div class="overflow">
-			<table>
-				<thead>
-					<tr>
-						<th>Property</th>
-						<th>Type</th>
-						<th>Default</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>hoverable</td>
-						<td><code>Boolean</code></td>
-						<td><code>false</code></td>
-						<td></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
+	</ComponentDoc>
 </template>
+<script>
+export default {
+	data ()	 {
+		return {
+			reference: {
+				props: [
+					{
+						name: 'hoverable',
+						type: Boolean,
+						default: false,
+						description: 'x'
+					}
+				]
+			}
+		};
+	}
+};
+</script>
