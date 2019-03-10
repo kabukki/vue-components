@@ -1,6 +1,6 @@
 <template>
 	<div class="doc">
-		<section>
+		<section class="presentation">
 			<h1>{{ name }}</h1>
 			<p v-if="description">{{ description }}</p>
 		</section>
@@ -35,6 +35,8 @@ export default {
 <style lang="scss" scoped>
 .doc {
 	section {
+		padding: 10px 0;
+		
 		&:not(:first-child) {
 			border-top: 1px solid #999;
 		}

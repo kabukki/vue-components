@@ -1,7 +1,7 @@
 <template>
 	<div id="app">
 		<header>
-			<img id="logo" src="@/assets/icon-vue.png" alt="logo">
+			<img id="logo" src="@/assets/vue.png" alt="logo">
 			<router-link id="title" to="/">
 				<h1>Vue Components</h1>
 			</router-link>
@@ -43,6 +43,7 @@ export default {
 				{ title: 'Banner', name: 'banner' },
 				{ title: 'Button', name: 'button' },
 				{ title: 'Card', name: 'card' },
+				{ title: 'Carousel', name: 'carousel' },
 				{ title: 'Checkbox', name: 'checkbox' },
 				{ title: 'Chip', name: 'chip' },
 				{ title: 'Input', name: 'input' },
@@ -163,5 +164,23 @@ body {
 
 .overflow {
 	overflow: auto;
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+
+	@media (min-width: 576px) {
+		max-width: 540px;
+	}
+	@media (min-width: 768px) {
+		max-width: 720px;
+	}
+	@media (min-width: 992px) {
+		max-width: 960px;
+	}
+	@media (min-width: 1200px) {
+		max-width: 1140px;
+	}
 }
 </style>

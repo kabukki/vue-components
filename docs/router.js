@@ -8,6 +8,7 @@ import Avatar from './views/Avatar';
 import Banner from './views/Banner';
 import Button from './views/Button';
 import Card from './views/Card';
+import Carousel from './views/Carousel';
 import Checkbox from './views/Checkbox';
 import Chip from './views/Chip';
 import Input from './views/Input';
@@ -91,6 +92,10 @@ export default new Router({
 			path: '/rating',
 			name: 'rating',
 			component: Rating
+		}, {
+			path: '/carousel',
+			name: 'carousel',
+			component: Carousel
 		}
 	]
 });

@@ -26,7 +26,7 @@
 export default {
 	data () {
 		return {
-			logo: require('@/assets/icon-vue.png'),
+			logo: require('@/assets/vue.png'),
 			reference: {
 				props: [
 					{
