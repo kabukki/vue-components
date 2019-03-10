@@ -13,5 +13,6 @@ module.exports = {
 			}
 		}
 	},
-	outputDir: path.resolve(__dirname, './dist/docs')
+	outputDir: path.resolve(__dirname, './dist/docs'),
+	publicPath: process.env.NODE_ENV === 'production' ? '/components/' : '/'
 };
