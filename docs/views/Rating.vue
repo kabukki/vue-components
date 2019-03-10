@@ -43,6 +43,12 @@
 						<td><code>undefined</code></td>
 						<td>one of: 'primary', 'secondary', 'accent', 'success', 'warning', 'error'</td>
 					</tr>
+					<tr>
+						<td>readonly</td>
+						<td><code>Boolean</code></td>
+						<td><code>false</code></td>
+						<td>disallows value selection</td>
+					</tr>
 				</tbody>
 			</table>
 		</div>
