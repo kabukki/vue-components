@@ -8,6 +8,8 @@
 }
 
 .k-rating {
+	white-space: nowrap;
+	
 	.star {
 		@include clickable;
 		display: inline-block;
