@@ -9,14 +9,15 @@ import Banner from './views/Banner';
 import Button from './views/Button';
 import Card from './views/Card';
 import Checkbox from './views/Checkbox';
-import Input from './views/Input';
 import Chip from './views/Chip';
+import Input from './views/Input';
+import List from './views/List';
+import Rating from './views/Rating';
 import SkeletonAvatar from './views/SkeletonAvatar';
 import SkeletonImage from './views/SkeletonImage';
 import SkeletonHeading from './views/SkeletonHeading';
 import SkeletonText from './views/SkeletonText';
 import Textarea from './views/Textarea';
-import List from './views/List';
 
 Vue.use(Router);
 
@@ -86,6 +87,10 @@ export default new Router({
 			path: '/list',
 			name: 'list',
 			component: List
+		}, {
+			path: '/rating',
+			name: 'rating',
+			component: Rating
 		}
 	]
 });

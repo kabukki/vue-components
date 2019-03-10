@@ -47,6 +47,7 @@ export default {
 				{ title: 'Chip', name: 'chip' },
 				{ title: 'Input', name: 'input' },
 				{ title: 'List', name: 'list' },
+				{ title: 'Rating', name: 'rating' },
 				{ title: 'Skeleton avatar', name: 'skeleton-avatar' },
 				{ title: 'Skeleton image', name: 'skeleton-image' },
 				{ title: 'Skeleton heading', name: 'skeleton-heading' },
