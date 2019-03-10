@@ -1,5 +1,5 @@
 <template>
-	<div class="doc">
+	<div class="doc container">
 		<section class="presentation">
 			<h1>{{ name }}</h1>
 			<p v-if="description">{{ description }}</p>

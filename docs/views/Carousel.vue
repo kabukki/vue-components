@@ -5,34 +5,28 @@
 		:reference="reference"
 	>
 		<h3>Height</h3>
-		<div class="container">
-			<KCarousel :height="50" :images="images"/>
-			<hr>
-			<KCarousel :height="100" :images="images"/>
-			<hr>
-			<KCarousel :height="200" :images="images"/>
-		</div>
+		<KCarousel :height="50" :images="images"/>
+		<hr>
+		<KCarousel :height="100" :images="images"/>
+		<hr>
+		<KCarousel :height="200" :images="images"/>
 		<h3>Cover vs contain</h3>
-		<div class="container">
-			<KCarousel :images="images"/>
-			<hr>
-			<KCarousel contain :images="images"/>
-		</div>
+		<KCarousel :images="images"/>
+		<hr>
+		<KCarousel contain :images="images"/>
 		<h3>Color</h3>
 		<p>Controls can have color.</p>
-		<div class="container">
-			<KCarousel :height="100" color="primary" :images="images"/>
-			<hr>
-			<KCarousel :height="100" color="secondary" :images="images"/>
-			<hr>
-			<KCarousel :height="100" color="accent" :images="images"/>
-			<hr>
-			<KCarousel :height="100" color="success" :images="images"/>
-			<hr>
-			<KCarousel :height="100" color="warning" :images="images"/>
-			<hr>
-			<KCarousel :height="100" color="error" :images="images"/>
-		</div>
+		<KCarousel :height="100" color="primary" :images="images"/>
+		<hr>
+		<KCarousel :height="100" color="secondary" :images="images"/>
+		<hr>
+		<KCarousel :height="100" color="accent" :images="images"/>
+		<hr>
+		<KCarousel :height="100" color="success" :images="images"/>
+		<hr>
+		<KCarousel :height="100" color="warning" :images="images"/>
+		<hr>
+		<KCarousel :height="100" color="error" :images="images"/>
 	</ComponentDoc>
 </template>
 <script>

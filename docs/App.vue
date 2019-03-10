@@ -22,7 +22,9 @@
 					{{ link.title }}
 				</router-link>
 			</nav>
-			<router-view class="content" :class="themeClasses"></router-view>
+			<div class="content" :class="themeClasses">
+				<router-view></router-view>
+			</div>
 		</main>
 	</div>
 </template>
@@ -141,7 +143,7 @@ body {
 		}
 		> .content {
 			flex: 1 1 auto;
-			padding: 24px;
+			padding: 12px;
 			overflow: auto;
 		}
 	}
