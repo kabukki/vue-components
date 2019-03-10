@@ -9,6 +9,10 @@ export default {
 	mixins: [ Colorable ],
 	props: {
 		readonly: Boolean,
+		max: {
+			type: Number,
+			default: 5
+		},
 		value: {
 			type: Number,
 			required: true
@@ -40,7 +44,7 @@ export default {
 		genStars () {
 			const stars = [];
 
-			for (let n = 1; n <= 5; ++n) {
+			for (let n = 1; n <= this.max; ++n) {
 				const star = this.$createElement(
 					FontAwesomeIcon,
 					{
