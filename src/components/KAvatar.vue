@@ -1,6 +1,7 @@
 <script>
 export default {
 	props: {
+		src: String,
 		hoverable: {
 			type: Boolean,
 			default: false
@@ -24,14 +25,19 @@ export default {
 	render (h) {
 		const data = {
 			class: this.classes,
-			attrs: this.$attrs,
+			attrs: {
+				role: 'img'
+			},
 			style: {
 				width: this.actualSize,
-				height: this.actualSize
+				height: this.actualSize,
+				backgroundImage: `url(${this.src})`,
+				backgroundSize: 'cover',
+				backgroundPosition: 'center'
 			}
 		};
 		
-		return h('img', data, [ this.$slots.default ]);
+		return h('div', data);
 	}
 };
 </script>

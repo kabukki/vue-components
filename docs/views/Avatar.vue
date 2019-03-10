@@ -6,19 +6,19 @@
 	>
 		<h3>Size</h3>
 		<div class="flex">
-			<KAvatar :src="logo" :size="20"/>
-			<KAvatar :src="logo" :size="40"/>
-			<KAvatar :src="logo" :size="60"/>
-			<KAvatar :src="logo" :size="80"/>
-			<KAvatar :src="logo" :size="100"/>
+			<KAvatar :src="avatar" :size="20"/>
+			<KAvatar :src="avatar" :size="40"/>
+			<KAvatar :src="avatar" :size="60"/>
+			<KAvatar :src="avatar" :size="80"/>
+			<KAvatar :src="avatar" :size="100"/>
 		</div>
 		<h3>Hoverable</h3>
 		<div class="flex">
-			<KAvatar :src="logo" hoverable :size="20"/>
-			<KAvatar :src="logo" hoverable :size="40"/>
-			<KAvatar :src="logo" hoverable :size="60"/>
-			<KAvatar :src="logo" hoverable :size="80"/>
-			<KAvatar :src="logo" hoverable :size="100"/>
+			<KAvatar :src="avatar" hoverable :size="20"/>
+			<KAvatar :src="avatar" hoverable :size="40"/>
+			<KAvatar :src="avatar" hoverable :size="60"/>
+			<KAvatar :src="avatar" hoverable :size="80"/>
+			<KAvatar :src="avatar" hoverable :size="100"/>
 		</div>
 	</ComponentDoc>
 </template>
@@ -26,10 +26,15 @@
 export default {
 	data () {
 		return {
-			logo: require('@/assets/vue.png'),
+			avatar: require('@/assets/avatar1.jpeg'),
 			reference: {
 				props: [
 					{
+						name: 'src',
+						type: String,
+						default: undefined,
+						description: 'image src'
+					}, {
 						name: 'hoverable',
 						type: Boolean,
 						default: false,
