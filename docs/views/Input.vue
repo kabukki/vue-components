@@ -11,7 +11,6 @@
 		<KInput type="number" placeholder="Your number" v-model.number="number" disabled/>
 		<h3>Icon</h3>
 		<KInput type="text" placeholder="Your text" icon="star" v-model="text"/>
-		<p>TODO icon rework</p>
 		<h3>Clearable</h3>
 		<KInput type="text" placeholder="Your text" clearable v-model="text"/>
 		<h3>With label</h3>
