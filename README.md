@@ -7,7 +7,7 @@ The 'K' prefix stands for [Kabukki](https://github.com/kabukki).
 ### Build components and themes
 ```
 npm run build
-npm run watch // watch mode
+npm run watch # watch mode
 ```
 
 ### Server documentation locally
