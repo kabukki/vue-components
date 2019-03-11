@@ -1,4 +1,3 @@
-<script>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStarOutline } from '@fortawesome/free-regular-svg-icons';
@@ -82,4 +81,3 @@ export default {
 		return h('div', data, this.genStars());
 	}
 };
-</script>

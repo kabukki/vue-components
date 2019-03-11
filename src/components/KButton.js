@@ -1,4 +1,3 @@
-<script>
 import Colorable from '../mixins/Colorable';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
@@ -52,4 +51,3 @@ export default {
 		return h('button', data, children);
 	}
 };
-</script>

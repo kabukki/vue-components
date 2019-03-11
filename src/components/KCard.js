@@ -1,4 +1,3 @@
-<script>
 export default {
 	props: {
 		hoverable: {
@@ -22,4 +21,3 @@ export default {
 		return h('div', data, [ this.$slots.default ]);
 	}
 };
-</script>

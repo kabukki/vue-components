@@ -1,4 +1,3 @@
-<script>
 export default {
 	props: {
 		size: {
@@ -29,4 +28,3 @@ export default {
 		return h('div', data, [ this.$slots.default ]);
 	}
 };
-</script>

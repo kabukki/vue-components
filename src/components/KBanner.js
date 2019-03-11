@@ -1,4 +1,3 @@
-<script>
 import Colorable from '../mixins/Colorable';
 
 export default {
@@ -30,4 +29,3 @@ export default {
 		return h('div', data, [ this.$slots.default ]);
 	}
 };
-</script>

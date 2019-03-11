@@ -1,4 +1,3 @@
-<script>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faSquare } from '@fortawesome/free-regular-svg-icons';
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
@@ -86,4 +85,3 @@ export default {
 		}), children);
 	}
 };
-</script>

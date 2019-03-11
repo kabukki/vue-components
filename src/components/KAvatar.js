@@ -1,4 +1,3 @@
-<script>
 export default {
 	props: {
 		src: String,
@@ -40,4 +39,3 @@ export default {
 		return h('div', data);
 	}
 };
-</script>
