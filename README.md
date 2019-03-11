@@ -2,14 +2,20 @@
 
 Reusable component framework for Vue.js apps.
 
-The 'K' prefix stands for **Kabukki**.
+The 'K' prefix stands for [Kabukki](https://github.com/kabukki).
 
-### Compiles and minifies for production
+### Build components and themes
 ```
 npm run build
+npm run watch // watch mode
 ```
 
-### Run your tests
+### Server documentation locally
 ```
-npm run test
+npm run docs:serve
+```
+
+### Build documentation
+```
+npm run docs:build
 ```
