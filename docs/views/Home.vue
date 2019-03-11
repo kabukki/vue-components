@@ -3,10 +3,10 @@
 		<h1>Home</h1>
 		<hr>
 		<h2>Installation</h2>
-		<p>The package is not published yet.</p>
+		<pre>npm install @kabukki/vue-components</pre>
 		<hr>
 		<h2>Usage</h2>
-		<p>Available themes:</p>
+		<p>Available official themes:</p>
 		<ul>
 			<li v-for="theme in themes" :key="theme.class">
 				<strong>{{ theme.name }}</strong>: <code>{{ theme.class }}</code> - {{ theme.description }}
@@ -38,7 +38,8 @@
 </template>
 <script>
 import { version } from '../../package.json';
-import { themes } from '../../themes';
+import shops from '@kabukki/vue-components-theme-shops';
+import alidhan from '@kabukki/vue-components-theme-alidhan';
 
 const usageExample =
 `<div id="app" class="shops">
@@ -50,7 +51,7 @@ export default {
 		return {
 			version,
 			usageExample,
-			themes
+			themes: [ shops, alidhan ]
 		};
 	}
 };

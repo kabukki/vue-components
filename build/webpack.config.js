@@ -1,16 +1,12 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const themes = require('../themes').webpackEntries;
 
 module.exports = {
 	mode: 'production',
 	context: path.resolve(__dirname, '..'),
 	entry: {
-		main: path.resolve(__dirname, '../src/index.js'),
-		...themes
+		main: path.resolve(__dirname, '../src/index.js')
 	},
 	output: {
 		path: path.resolve(__dirname, '../dist/lib'),
@@ -31,20 +27,8 @@ module.exports = {
 		alias: {
 			'@': path.resolve(__dirname, '../src')
 		},
-		extensions: ['.js', '.vue', '.scss']
+		extensions: ['.js', '.vue']
 	},
-	// optimization: {
-	// 	splitChunks: {
-	// 		cacheGroups: {
-	// 			shops: {
-	// 				test: themes.shops,
-	// 				name: 'shops',
-	// 				filename: 'shops.css',
-	// 				chunks: 'all'
-	// 			}
-	// 		}
-	// 	}
-	// },
 	module: {
 		rules: [{
 			test: /\.vue$/,
@@ -53,19 +37,10 @@ module.exports = {
 			test: /\.js$/,
 			loader: 'babel-loader',
 			exclude: /node_modules/
-		}, {
-			test: /\.scss$/,
-			use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader' ]
-		}, {
-			test: /\.woff2$/,
-			use: 'url-loader'
 		}]
 	},
 	plugins: [
-		new VueLoaderPlugin(),
-		new MiniCssExtractPlugin({
-			filename: '[name].css'
-		})
+		new VueLoaderPlugin()
 	],
 	optimization: {
 		minimizer: [
@@ -73,8 +48,7 @@ module.exports = {
 				cache: true,
 				parallel: true,
 				sourceMap: true
-			}),
-			new OptimizeCssAssetsPlugin()
+			})
 		]
 	}
 };

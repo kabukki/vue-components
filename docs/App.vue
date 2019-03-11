@@ -29,14 +29,17 @@
 	</div>
 </template>
 <script>
-import { themes } from '../themes';
+import shops from '@kabukki/vue-components-theme-shops';
+import alidhan from '@kabukki/vue-components-theme-alidhan';
+
+console.log(shops);
 
 export default {
 	data () {
 		return {
 			dark: false,
 			theme: 'shops',
-			themes,
+			themes: [ shops, alidhan ],
 			links: [
 				{ title: 'Home', name: 'home' },
 				{ title: 'Examples', name: 'examples' },

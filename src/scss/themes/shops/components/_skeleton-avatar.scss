@@ -1,7 +1,0 @@
-@import '../_variables';
-@import '../_mixins';
-
-.k-skeleton-avatar {
-	@include skeleton-element;
-	border-radius: 50%;
-}
