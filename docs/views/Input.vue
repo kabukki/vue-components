@@ -37,7 +37,7 @@ export default {
 						name: 'icon',
 						type: String,
 						default: undefined,
-						description: 'Prepends a Font Awesome icon to the input'
+						description: 'Name of the Font Awesome icon to prepend to the input. You must install the icon separately.'
 					}, {
 						name: 'clearable',
 						type: Boolean,

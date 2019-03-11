@@ -14,23 +14,21 @@
 		<div class="dots">
 			<font-awesome-icon class="dot"
 				@click="goTo(n - 1)"
-				:icon="n - 1 === index ? circle : circleOutline"
+				:icon="n - 1 === index ? icons.fasCircle : icons.farCircle"
 				v-for="n in images.length"
 				:key="n"
 			/>
 		</div>
-		<font-awesome-icon class="prev" :icon="chevronLeft" @click="prev"/>
-		<font-awesome-icon class="next" :icon="chevronRight" @click="next"/>
+		<font-awesome-icon class="prev" :icon="icons.fasChevronLeft" @click="prev"/>
+		<font-awesome-icon class="next" :icon="icons.fasChevronRight" @click="next"/>
 	</div>
 </template>
 <script>
-import { faChevronLeft, faChevronRight, faCircle } from '@fortawesome/free-solid-svg-icons';
-import { faCircle as faCircleOutline } from '@fortawesome/free-regular-svg-icons';
-
 import Colorable from '@/mixins/Colorable';
+import IconConsumer from '@/mixins/IconConsumer';
 
 export default {
-	mixins: [ Colorable ],
+	mixins: [ Colorable, IconConsumer ],
 	props: {
 		images: Array,
 		contain: Boolean,
@@ -43,10 +41,6 @@ export default {
 		return {
 			index: 0,
 			reverse: false,
-			chevronLeft: faChevronLeft,
-			chevronRight: faChevronRight,
-			circle: faCircle,
-			circleOutline: faCircleOutline
 		};
 	},
 	computed: {

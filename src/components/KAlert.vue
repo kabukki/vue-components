@@ -9,9 +9,10 @@
 	</div>
 </template>
 <script>
-import { faCheckCircle, faExclamationTriangle, faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
+import IconConsumer from '@/mixins/IconConsumer';
 
 export default {
+	mixins: [ IconConsumer ],
 	props: {
 		type: {
 			type: String,
@@ -28,9 +29,9 @@ export default {
 		},
 		icon () {
 			switch (this.type) {
-				case 'success': return faCheckCircle;
-				case 'warning': return faExclamationTriangle;
-				case 'error': return faExclamationCircle;
+				case 'success': return this.icons.fasCheckCircle;
+				case 'warning': return this.icons.fasExclamationTriangle;
+				case 'error': return this.icons.fasExclamationCircle;
 			}
 		}
 	}

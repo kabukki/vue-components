@@ -7,15 +7,18 @@
 			</div>
 			<input v-bind="$attrs" v-on="listeners" :value="value" :disabled="disabled">
 			<div class="clear" v-if="clearable" v-show="value.length > 0" @click="onClear">
-				<font-awesome-icon icon="times-circle"/>
+				<font-awesome-icon :icon="icons.fasTimesCircle"/>
 			</div>
 		</div>
 		<small class="help" v-if="help">{{ help }}</small>
 	</div>
 </template>
 <script>
+import IconConsumer from '@/mixins/IconConsumer';
+
 export default {
 	inheritAttrs: false,
+	mixins: [ IconConsumer ],
 	props: {
 		disabled: Boolean,
 		icon: String,
