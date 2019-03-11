@@ -4,6 +4,7 @@
   "description": "Reusable Vue component framework",
   "author": "Lucien Le Roux",
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "webpack --config build/webpack.config.js",
     "watch": "webpack --config build/webpack.config.js --watch",
     "docs:serve": "vue-cli-service serve",
