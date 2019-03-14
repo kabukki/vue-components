@@ -16,13 +16,6 @@ module.exports = {
 		// https://github.com/webpack/webpack/issues/6525#issuecomment-417580843
 		globalObject: `typeof self !== 'undefined' ? self : this`
 	},
-	externals: [
-		// FontAwesomeIcon component
-		'@fortawesome/vue-fontawesome',
-		// Icon packs
-		'@fortawesome/free-solid-svg-icons',
-		'@fortawesome/free-regular-svg-icons'
-	],
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, '../src')
