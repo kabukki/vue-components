@@ -43,7 +43,9 @@ export default {
 			this.currentHover = 0;
 		},
 		genLabel () {
-			return this.$createElement('p', this.label)
+			return this.$createElement('span', {
+				class: 'label'
+			}, this.label);
 		},
 		genStars () {
 			const stars = [];
