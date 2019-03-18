@@ -9,6 +9,7 @@ export default {
 	mixins: [ Colorable ],
 	props: {
 		readonly: Boolean,
+		label: String,
 		max: {
 			type: Number,
 			default: 5
@@ -40,6 +41,9 @@ export default {
 		},
 		onMouseLeave () {
 			this.currentHover = 0;
+		},
+		genLabel () {
+			return this.$createElement('p', this.label)
 		},
 		genStars () {
 			const stars = [];
@@ -78,7 +82,12 @@ export default {
 			class: this.classes,
 			attrs: this.$attrs
 		});
+		const children = this.genStars();
+
+		if (this.label) {
+			children.unshift(this.genLabel());
+		}
 		
-		return h('div', data, this.genStars());
+		return h('div', data, children);
 	}
 };
