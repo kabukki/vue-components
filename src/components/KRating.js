@@ -45,7 +45,7 @@ export default {
 		genLabel () {
 			return this.$createElement('span', {
 				class: 'label'
-			}, this.label);
+			}, [ this.label ]);
 		},
 		genStars () {
 			const stars = [];
