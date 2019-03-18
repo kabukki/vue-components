@@ -9,6 +9,7 @@ export default {
 	mixins: [ Colorable ],
 	props: {
 		readonly: Boolean,
+		prefixed: Boolean,
 		label: String,
 		max: {
 			type: Number,
@@ -43,9 +44,14 @@ export default {
 			this.currentHover = 0;
 		},
 		genLabel () {
-			return this.$createElement('span', {
+			return this.$createElement('div', {
 				class: 'label'
 			}, [ this.label ]);
+		},
+		genPrefix () {
+			return this.$createElement('span', {
+				class: 'prefix'
+			}, [ this.value.toString() ]);
 		},
 		genStars () {
 			const stars = [];
@@ -86,6 +92,10 @@ export default {
 		});
 		const children = this.genStars();
 
+		if (this.prefixed) {
+			children.unshift(this.genPrefix());
+		}
+		
 		if (this.label) {
 			children.unshift(this.genLabel());
 		}
