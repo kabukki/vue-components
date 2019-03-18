@@ -5,6 +5,7 @@ import { faStar as faStarOutline } from '@fortawesome/free-regular-svg-icons';
 import Colorable from '../mixins/Colorable';
 
 export default {
+	name: 'KRating',
 	mixins: [ Colorable ],
 	props: {
 		readonly: Boolean,

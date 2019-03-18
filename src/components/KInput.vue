@@ -14,9 +14,10 @@
 	</div>
 </template>
 <script>
-import IconConsumer from '@/mixins/IconConsumer';
+import IconConsumer from '../mixins/IconConsumer';
 
 export default {
+	name: 'KInput',
 	inheritAttrs: false,
 	mixins: [ IconConsumer ],
 	props: {

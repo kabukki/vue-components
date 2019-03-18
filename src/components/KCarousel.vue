@@ -24,10 +24,11 @@
 	</div>
 </template>
 <script>
-import Colorable from '@/mixins/Colorable';
-import IconConsumer from '@/mixins/IconConsumer';
+import Colorable from '../mixins/Colorable';
+import IconConsumer from '../mixins/IconConsumer';
 
 export default {
+	name: 'KCarousel',
 	mixins: [ Colorable, IconConsumer ],
 	props: {
 		images: Array,

@@ -1,6 +1,7 @@
 import Colorable from '../mixins/Colorable';
 
 export default {
+	name: 'KChip',
 	mixins: [ Colorable ],
 	props: {
 		outline: Boolean

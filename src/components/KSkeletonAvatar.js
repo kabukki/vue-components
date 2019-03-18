@@ -1,4 +1,5 @@
 export default {
+	name: 'KSkeletonAvatar',
 	props: {
 		size: {
 			type: Number,

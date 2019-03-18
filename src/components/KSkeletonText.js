@@ -1,4 +1,5 @@
 export default {
+	name: 'KSkeletonText',
 	props: {
 		lines: {
 			type: Number,

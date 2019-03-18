@@ -17,9 +17,6 @@ module.exports = {
 		globalObject: `typeof self !== 'undefined' ? self : this`
 	},
 	resolve: {
-		alias: {
-			'@': path.resolve(__dirname, '../src')
-		},
 		extensions: ['.js', '.vue']
 	},
 	module: {

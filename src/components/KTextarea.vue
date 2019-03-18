@@ -7,6 +7,7 @@
 </template>
 <script>
 export default {
+	name: 'KTextarea',
 	inheritAttrs: false,
 	props: {
 		disabled: Boolean,

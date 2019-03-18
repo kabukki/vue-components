@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 export default {
+	name: 'KButton',
 	mixins: [ Colorable ],
 	props: {
 		outline: Boolean,

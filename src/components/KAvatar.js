@@ -1,4 +1,5 @@
 export default {
+	name: 'KAvatar',
 	props: {
 		src: String,
 		hoverable: {

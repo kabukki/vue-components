@@ -1,6 +1,7 @@
 import Colorable from '../mixins/Colorable';
 
 export default {
+	name: 'KBanner',
 	mixins: [ Colorable ],
 	props: {
 		image: String
