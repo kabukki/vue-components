@@ -1,6 +1,6 @@
 {
   "name": "@kabukki/vue-components",
-  "version": "0.4.6",
+  "version": "0.5.0",
   "description": "Reusable Vue components framework",
   "author": "Lucien Le Roux",
   "main": "dist/main.js",
