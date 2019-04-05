@@ -8,6 +8,7 @@ export { default as KCheckbox } from './KCheckbox';
 export { default as KChip } from './KChip';
 export { default as KInput } from './KInput';
 export { default as KList } from './KList';
+export { default as KModal } from './KModal';
 export { default as KRating } from './KRating';
 export { default as KSkeletonHeading } from './KSkeletonHeading';
 export { default as KSkeletonImage } from './KSkeletonImage';
