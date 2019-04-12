@@ -51,7 +51,7 @@ export default {
 		genPrefix () {
 			return this.$createElement('span', {
 				class: 'prefix'
-			}, [ this.value.toString() ]);
+			}, [ this.value.toFixed(1) ]);
 		},
 		genStars () {
 			const stars = [];
