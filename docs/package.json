@@ -2,7 +2,6 @@
   "name": "@kabukki/vue-components-docs",
   "version": "0.1.1",
   "scripts": {
-    "prepublishOnly": "npm run build",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
