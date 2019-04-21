@@ -1,8 +1,6 @@
 # Vue Components
 
-Reusable component framework for Vue.js apps.
-
-The 'K' prefix stands for [Kabukki](https://github.com/kabukki).
+[Kabukki](https://github.com/kabukki)'s reusable component framework for Vue.js apps.
 
 ## Documentation
 
@@ -10,18 +8,8 @@ Documentation is available at https://docs.datsite.eu/components.
 
 ## NPM scripts
 
-### Build components and themes
+### Build components
 ```
 npm run build
 npm run watch # watch mode
-```
-
-### Server documentation locally
-```
-npm run docs:serve
-```
-
-### Build documentation
-```
-npm run docs:build
 ```
