@@ -5,11 +5,3 @@
 ## Documentation
 
 Documentation is available at https://docs.datsite.eu/components.
-
-## NPM scripts
-
-### Build components
-```
-npm run build
-npm run watch # watch mode
-```
