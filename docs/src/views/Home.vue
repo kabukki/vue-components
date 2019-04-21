@@ -3,7 +3,11 @@
 		<h1>Home</h1>
 		<hr>
 		<h2>Installation</h2>
+		<p>Core components:</p>
 		<pre>npm install @kabukki/vue-components</pre>
+		<p>Official themes:</p>
+		<pre>npm install @kabukki/vue-components-themes</pre>
+		<p>Other third-party themes can be installed separately.</p>
 		<hr>
 		<h2>Usage</h2>
 		<p>Available official themes:</p>

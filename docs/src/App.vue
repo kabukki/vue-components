@@ -29,15 +29,14 @@
 	</div>
 </template>
 <script>
-import shops from '../../themes/shops';
-import alidhan from '../../themes/alidhan';
+import themes from '../../themes';
 
 export default {
 	data () {
 		return {
 			dark: false,
 			theme: 'shops',
-			themes: [ shops, alidhan ],
+			themes,
 			links: [
 				{ title: 'Home', name: 'home' },
 				{ title: 'Examples', name: 'examples' },
