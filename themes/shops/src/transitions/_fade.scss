@@ -1,0 +1,61 @@
+/**
+ * Fade X
+ */
+
+// Appear at
+.fade-x-enter {
+	opacity: 0;
+	transform: translateX(-10px);
+}
+
+// Disappear to
+.fade-x-leave-to {
+	opacity: 0;
+	transform: translateX(10px);
+}
+
+// Leave at / Appear to
+.fade-x-leave, .fade-x-enter-to { opacity: 1; }
+
+.fade-x-enter-active, .fade-x-leave-active { transition: all .3s ease-in-out; }
+
+/**
+ * Fade Y
+ */
+
+// Appear at
+.fade-y-enter {
+	opacity: 0;
+	transform: translateY(-10px);
+}
+
+// Disappear to
+.fade-y-leave-to {
+	opacity: 0;
+	transform: translateY(10px);
+}
+
+// Leave at / Appear to
+.fade-y-leave, .fade-y-enter-to { opacity: 1; }
+
+.fade-y-enter-active, .fade-y-leave-active { transition: all .3s ease-in-out; }
+
+/**
+ * Fade
+ */
+
+// Appear at
+.fade-enter {
+	opacity: 0;
+}
+
+// Disappear to
+.fade-leave-to {
+	opacity: 0;
+}
+
+// Leave at / Appear to
+.fade-leave, .fade-enter-to { opacity: 1; }
+
+.fade-enter-active, .fade-leave-active { transition: all .3s ease-in-out; }
+

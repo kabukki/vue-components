@@ -1,0 +1,44 @@
+// https://fr.vuejs.org/images/transition.png
+
+/**
+* An item that is leaving lets the whole space available for the new item to come
+*/
+@mixin leaving {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/**
+* Horizontal, from right and from left
+*/
+
+// From right to left: when item enters, it is first positioned at the far right
+.x-rtl-enter {
+	transform: translateX(100%);
+}
+
+// From right to left: when item has left, it is positioned at the far left
+.x-rtl-leave-to {
+	@include leaving;
+	transform: translateX(-100%);
+}
+
+// From left to right: when item enters, it is first positioned at the far left
+.x-ltr-enter {
+	transform: translateX(-100%);
+}
+
+// From left to right: when item has left, it is positioned at the far right
+.x-ltr-leave-to {
+	@include leaving;
+	transform: translateX(100%);
+}
+
+// enter-to and leave are omitted because by default, no transform is applied
+
+// Applied during enter and leave
+.x-rtl-enter-active, .x-rtl-leave-active,
+.x-ltr-enter-active, .x-ltr-leave-active {
+	transition: all .3s ease-in-out;
+}

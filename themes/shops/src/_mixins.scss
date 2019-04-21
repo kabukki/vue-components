@@ -1,0 +1,42 @@
+@import 'variables';
+@import 'keyframes';
+
+@mixin clickable {
+	cursor: pointer;
+}
+
+@mixin ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@mixin skeleton-element {
+	// TODO
+	// background-image: linear-gradient(to right, $grey-lightest, $grey-light, $grey-lightest);
+	// background-repeat: no-repeat;
+	// background-attachment: fixed;
+	// background-size: 100%;
+	// background-position: 200px 0;
+	animation: skeleton-pulse .8s linear infinite alternate;
+	background-color: $grey-light;
+	margin: 8px 0;
+}
+
+/**
+* Define default (light) styles for a theme
+*/
+@mixin light {
+	&:not(.dark) {
+		@content;
+	}
+}
+
+/**
+* Defines dark styles for a theme
+*/
+@mixin dark {
+	&.dark {
+		@content;
+	}
+}

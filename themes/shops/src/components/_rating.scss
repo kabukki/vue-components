@@ -1,0 +1,47 @@
+@import '../variables';
+@import '../mixins';
+
+@mixin rating ($color) {
+	.star.filled {
+		color: $color;
+	}
+}
+
+.k-rating {
+	white-space: nowrap;
+	
+	.label {
+		font-size: 20px;
+	}
+
+	.prefix {
+		margin-right: 4px;
+	}
+	
+	.star {
+		@include clickable;
+		display: inline-block;
+		color: $grey-dark;
+
+		&.hovering {
+			filter: brightness(1.25);
+		}
+	}
+
+	&.readonly {
+		pointer-events: none;
+	}
+
+	/**
+	* Color
+	*/
+
+	// Default style
+	@include rating ($grey);
+
+	@each $class, $color in $color-map {
+		&.#{$class} {
+			@include rating ($color);
+		}
+	}
+}

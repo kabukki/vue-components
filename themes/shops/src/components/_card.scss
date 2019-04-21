@@ -1,0 +1,27 @@
+@import '../variables';
+@import '../mixins';
+
+.k-card {
+	overflow: hidden;
+	margin: 8px 0;
+	padding: 10px;
+	transition: all .2s;
+
+	&.hoverable:hover {
+		transform: translateY(-5px);
+	}
+}
+
+@include light {
+	.k-card {
+		box-shadow: 0 2px 4px $grey;
+		background-color: $white;
+	}
+}
+
+@include dark {
+	.k-card {
+		box-shadow: 0 2px 4px $black;
+		background-color: $grey-dark;
+	}
+}

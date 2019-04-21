@@ -1,0 +1,63 @@
+@import '../variables';
+
+/**
+ * Solid chip
+ */
+ @mixin chip-solid ($color) {
+	color: $grey-lightest;
+	border: 1px solid $color;
+	background-color: $color;
+}
+
+/**
+ * Inverted button
+ */
+@mixin chip-outline ($color) {
+	color: $color;
+	border: 1px solid $color;
+	background-color: transparent;
+}
+
+.k-chip {
+	display: inline-block;
+	white-space: nowrap;
+	border-radius: 20px;
+	padding: 4px 10px;
+	margin: 4px;
+
+	&.solid {
+		// Default style
+		@include chip-solid ($grey);
+	
+		@each $class, $color in $color-map {
+			&.#{$class} {
+				@include chip-solid ($color);
+			}
+		}
+
+		// Override these styles
+		&.success {
+			color: $green-dark;
+			background-color: $green-lightest;
+		}
+		&.warning {
+			color: $yellow-dark;
+			background-color: $yellow-lightest;
+		}
+		&.error {
+			color: $red-dark;
+			background-color: $red-lightest;
+		}
+	}
+
+	&.outline {
+		// Default style
+		@include chip-outline ($grey);
+	
+		@each $class, $color in $color-map {
+			&.#{$class} {
+				@include chip-outline ($color);
+			}
+		}
+	}
+}

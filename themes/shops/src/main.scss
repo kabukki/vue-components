@@ -1,0 +1,45 @@
+@import 'mixins';
+@import 'variables';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins|Rubik:300,400,500,700');
+
+.shops {
+
+	/**
+	* Common styles
+	*/
+
+	@import 'base';
+
+	/**
+	* Other classes
+	*/
+
+	@import 'helpers';
+	@import 'transitions/fade';
+	@import 'transitions/horizontal';
+
+	/**
+	* Components
+	*/
+
+	@import 'components/alert';
+	@import 'components/avatar';
+	@import 'components/banner';
+	@import 'components/button';
+	@import 'components/card';
+	@import 'components/carousel';
+	@import 'components/checkbox';
+	@import 'components/chip';
+	@import 'components/input';
+	@import 'components/list';
+	@import 'components/modal';
+	@import 'components/rating';
+	@import 'components/skeleton-avatar';
+	@import 'components/skeleton-heading';
+	@import 'components/skeleton-image';
+	@import 'components/skeleton-text';
+	@import 'components/textarea';
+
+}

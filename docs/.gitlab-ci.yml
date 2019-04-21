@@ -1,0 +1,39 @@
+image: node:latest
+
+# Cache between pipelines on the same branch/tag
+cache:
+  key: "$CI_COMMIT_REF_SLUG"
+  paths:
+    - node_modules/
+
+stages:
+  - install
+  - build
+  - deploy
+
+install:
+  stage: install
+  script:
+    - npm install
+
+build:
+  stage: build
+  script:
+    - npm run build
+  artifacts:
+    name: "$CI_COMMIT_SHORT_SHA"
+    paths:
+      - dist/
+
+deploy:
+  stage: deploy
+  before_script:
+    - which ssh-agent || (apt-get update -y && apt-get install openssh-client -y)
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -m 700 -p ~/.ssh
+    - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts && chmod 644 ~/.ssh/known_hosts
+  script:
+    - scp -o stricthostkeychecking=no -r dist/* remote@datsite.eu:/home/remote/web/docs/components
+  dependencies:
+    - build

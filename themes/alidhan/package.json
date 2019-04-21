@@ -1,0 +1,15 @@
+{
+  "name": "@kabukki/vue-components-theme-alidhan",
+  "version": "0.0.3",
+  "description": "Alidhan theme for Kabukki's Vue Component library",
+  "author": "Lucien Le Roux",
+  "main": "theme.js",
+  "license": "ISC",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "node build/main.js"
+  },
+  "devDependencies": {
+    "sass": "^1.17.2"
+  }
+}

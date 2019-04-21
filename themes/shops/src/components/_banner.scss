@@ -1,0 +1,36 @@
+@import '../_variables';
+
+/**
+ * Color banner
+ */
+@mixin banner ($color) {
+	background-color: $color;
+}
+
+.k-banner {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	box-shadow: 0 2px 4px $grey;
+	text-shadow: 0 0 10px $black;
+	color: $grey-lightest;
+	padding: 100px 0;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: inherit;
+	}
+
+	// Default style
+	@include banner($grey);
+
+	@each $class, $color in $color-map {
+		&.#{$class} {
+			@include banner ($color);
+		}
+	}
+	
+	&.image {
+		background-size: cover;
+		background-position: center;
+	}
+}

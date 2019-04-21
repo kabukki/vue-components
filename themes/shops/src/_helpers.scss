@@ -1,0 +1,29 @@
+@import 'variables';
+
+/**
+* Helper classes, common to all themes
+*/
+
+.primary-text {
+	color: $primary !important;
+}
+
+.secondary-text {
+	color: $secondary !important;
+}
+
+.accent-text {
+	color: $accent !important;
+}
+
+.success-text {
+	color: $success !important;
+}
+
+.warning-text {
+	color: $warning !important;
+}
+
+.error-text {
+	color: $error !important;
+}
