@@ -1,6 +1,6 @@
 {
   "name": "@kabukki/vue-components-themes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official themes for Kabukki's Vue Component library",
   "author": "Lucien Le Roux",
   "main": "themes.js",
