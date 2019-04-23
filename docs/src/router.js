@@ -15,6 +15,7 @@ import Chip from './views/Chip';
 import Input from './views/Input';
 import List from './views/List';
 import Rating from './views/Rating';
+import Select from './views/Select';
 import SkeletonAvatar from './views/SkeletonAvatar';
 import SkeletonImage from './views/SkeletonImage';
 import SkeletonHeading from './views/SkeletonHeading';
@@ -101,6 +102,10 @@ export default new Router({
 			path: '/carousel',
 			name: 'carousel',
 			component: Carousel
+		}, {
+			path: '/select',
+			name: 'select',
+			component: Select
 		}
 	]
 });

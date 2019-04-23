@@ -1,5 +1,4 @@
-@import '../_variables';
-@import '../mixins';
+@import '../variables';
 @import '../mixins';
 
 .k-input {
@@ -14,7 +13,7 @@
 		line-height: 1.5;
 		margin: 8px 0;
 		width: 100%;
-		transition: background-color .2s;
+		transition: all .2s;
 
 		.icon {
 			flex: 0 0 auto;
@@ -29,7 +28,6 @@
 			background-color: inherit;
 			border: none;
 			padding: 8px;
-			transition: all .2s;
 			// Needed to prevent overflow since input comes with fixed width and flex children have min-width: auto.
 			min-width: 0;
 			width: inherit;
@@ -61,13 +59,14 @@
 
 			input {
 				color: $grey-dark;
+				transition: color .2s;
 
 				&::placeholder {
 					color: $grey;
 				}
 				&:focus {
 					color: $primary;
-				}	
+				}
 			}
 		}
 
@@ -83,7 +82,7 @@
 					}
 				}
 			}
-		}	
+		}
 	}
 }
 
@@ -95,6 +94,7 @@
 
 			input {
 				color: $grey-darkest;
+				transition: color .2s;
 
 				&::placeholder {
 					color: $grey-dark;
@@ -117,6 +117,6 @@
 					}
 				}
 			}
-		}	
+		}
 	}
 }

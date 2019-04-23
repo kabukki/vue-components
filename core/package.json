@@ -1,6 +1,6 @@
 {
   "name": "@kabukki/vue-components",
-  "version": "0.5.3",
+  "version": "0.6.0",
   "description": "Reusable Vue components framework",
   "author": "Lucien Le Roux",
   "main": "dist/main.js",
@@ -14,7 +14,8 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-regular-svg-icons": "^5.7.2",
     "@fortawesome/free-solid-svg-icons": "^5.7.2",
-    "@fortawesome/vue-fontawesome": "^0.1.5"
+    "@fortawesome/vue-fontawesome": "^0.1.5",
+    "vue-select": "^3.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",

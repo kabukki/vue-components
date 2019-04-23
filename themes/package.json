@@ -1,6 +1,6 @@
 {
   "name": "@kabukki/vue-components-themes",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Official themes for Kabukki's Vue Component library",
   "author": "Lucien Le Roux",
   "main": "themes.js",
@@ -12,5 +12,8 @@
   },
   "devDependencies": {
     "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "vue-select": "^3.0.2"
   }
 }

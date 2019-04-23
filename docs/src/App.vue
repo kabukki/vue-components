@@ -52,6 +52,7 @@ export default {
 				{ title: 'List', name: 'list' },
 				{ title: 'Modal', name: 'modal' },
 				{ title: 'Rating', name: 'rating' },
+				{ title: 'Select', name: 'select' },
 				{ title: 'Skeleton avatar', name: 'skeleton-avatar' },
 				{ title: 'Skeleton image', name: 'skeleton-image' },
 				{ title: 'Skeleton heading', name: 'skeleton-heading' },

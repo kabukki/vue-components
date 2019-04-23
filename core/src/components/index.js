@@ -10,6 +10,7 @@ export { default as KInput } from './KInput';
 export { default as KList } from './KList';
 export { default as KModal } from './KModal';
 export { default as KRating } from './KRating';
+export { default as KSelect } from './KSelect';
 export { default as KSkeletonHeading } from './KSkeletonHeading';
 export { default as KSkeletonImage } from './KSkeletonImage';
 export { default as KSkeletonText } from './KSkeletonText';
