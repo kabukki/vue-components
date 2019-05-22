@@ -1,0 +1,22 @@
+@import '../variables';
+@import '../mixins';
+
+.k-option {
+	font-size: inherit;
+
+	&:checked {
+		color: $primary !important;
+	}
+}
+
+@include light {
+	.k-option {
+		color: $grey-dark;
+	}
+}
+
+@include dark {
+	.k-option {
+		color: $grey-darkest;
+	}
+}

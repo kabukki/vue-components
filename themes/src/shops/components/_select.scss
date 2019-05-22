@@ -1,130 +1,107 @@
 @import '../variables';
 @import '../mixins';
 
-$vs-component-line-height: 1.5;
+.k-select {
 
-@import '../../../node_modules/vue-select/src/scss/vue-select.scss';
+	.label {
+		font-size: 20px;
+	}
 
-.v-select {
-	.vs__dropdown-toggle {
-		border: none;
-		border-radius: 0;
-		transition: background-color .2s;
+	.input {
+		display: flex;
+		align-items: center;
+		line-height: 1.5;
+		margin: 8px 0;
+		width: 100%;
+		transition: all .2s;
 
-		.vs__selected-options {
-			.vs__selected {
-				font-size: 20px;
-				font-family: inherit;
-				border: none;
-			}
+		.icon {
+			flex: 0 0 auto;
+			padding: 8px;
+			color: $grey-darkest;
+		}
 
-			input {
-				font-size: 20px;
-				font-family: inherit;
-				border: none;
-			}
+		select {
+			flex: 1 1 auto;
+			outline: none;
+			font-size: 20px;
+			font-family: inherit;
+			background-color: inherit;
+			border: none;
+			padding: 8px;
+			// Needed to prevent overflow since input comes with fixed width and flex children have min-width: auto.
+			min-width: 0;
+			width: inherit;
+		}
+
+		.clear {
+			@include clickable;
+			flex: 0 0 auto;
+			padding: 8px;
+			color: $grey-darkest;
 		}
 	}
 
-	.vs__dropdown-menu {
-		border-radius: 0;
+	.help {
+		
+	}
 
-		.vs__dropdown-option {
-			font-size: 20px;
-			font-family: inherit;
-		}
-
-		.vs__dropdown-option--highlight {
-			background-color: $primary;
-		}
-
-		.vs__no-options {
-
+	&.disabled {
+		.input {
+			pointer-events: none;
 		}
 	}
 }
 
 @include light {
-	.v-select {
-		.vs__dropdown-toggle {
+	.k-select {
+		.input {
 			background-color: $white;
 			box-shadow: 0 2px 4px $grey;
-	
-			.vs__selected-options {
-				.vs__selected {
-					color: $grey-dark;
-				}
 
-				input {
-					color: $grey-dark;
-					transition: color .2s;
-	
-					&::placeholder {
-						color: $grey;
-					}
-					&:focus {
-						color: $primary;
-					}
+			select {
+				color: $grey-dark;
+
+				&:focus {
+					color: $primary;
 				}
 			}
 		}
 
-		.vs__dropdown-menu {
-			background-color: $white;
+		&.disabled {
+			.input {
+				background-color: $grey-lightest;
 
-			.vs__dropdown-option {
-				color: $grey-dark;
-			}
-	
-			.vs__dropdown-option--highlight {
-				color: $white;
-			}
-
-			.vs__no-options {
-				color: $grey-dark;
+				select {
+					color: $grey;
+				}
 			}
 		}
 	}
 }
 
 @include dark {
-	.v-select {
-		.vs__dropdown-toggle {
+	.k-select {
+		.input {
 			background-color: $grey;
 			box-shadow: 0 2px 4px $black;
-	
-			.vs__selected-options {
-				.vs__selected {
-					color: $grey-darkest;
-				}
 
-				input {
-					color: $grey-darkest;
-					transition: color .2s;
-	
-					&::placeholder {
-						color: $grey-dark;
-					}
-					&:focus {
-						color: $primary;
-					}
+			select {
+				color: $grey-darkest;
+
+				&:focus {
+					color: $primary;
 				}
 			}
 		}
 
-		.vs__dropdown-menu {
-			background-color: $grey;
+		&.disabled {
+			.input {
+				background-color: $grey-dark;
 
-			.vs__dropdown-option {
-				color: $grey-darkest;
-			}
-	
-			.vs__dropdown-option--highlight {
-				color: $white;
-			}
-
-			.vs__no-options {
-				color: $grey-darkest;
+				select {
+					color: $grey;
+				}
 			}
 		}
 	}

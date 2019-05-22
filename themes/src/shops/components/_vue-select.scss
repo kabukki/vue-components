@@ -1,0 +1,131 @@
+@import '../variables';
+@import '../mixins';
+
+$vs-component-line-height: 1.5;
+
+@import '../../../node_modules/vue-select/src/scss/vue-select.scss';
+
+.v-select {
+	.vs__dropdown-toggle {
+		border: none;
+		border-radius: 0;
+		transition: background-color .2s;
+
+		.vs__selected-options {
+			.vs__selected {
+				font-size: 20px;
+				font-family: inherit;
+				border: none;
+			}
+
+			input {
+				font-size: 20px;
+				font-family: inherit;
+				border: none;
+			}
+		}
+	}
+
+	.vs__dropdown-menu {
+		border-radius: 0;
+
+		.vs__dropdown-option {
+			font-size: 20px;
+			font-family: inherit;
+		}
+
+		.vs__dropdown-option--highlight {
+			background-color: $primary;
+		}
+
+		.vs__no-options {
+
+		}
+	}
+}
+
+@include light {
+	.v-select {
+		.vs__dropdown-toggle {
+			background-color: $white;
+			box-shadow: 0 2px 4px $grey;
+	
+			.vs__selected-options {
+				.vs__selected {
+					color: $grey-dark;
+				}
+
+				input {
+					color: $grey-dark;
+					transition: color .2s;
+	
+					&::placeholder {
+						color: $grey;
+					}
+					&:focus {
+						color: $primary;
+					}
+				}
+			}
+		}
+
+		.vs__dropdown-menu {
+			background-color: $white;
+
+			.vs__dropdown-option {
+				color: $grey-dark;
+			}
+	
+			.vs__dropdown-option--highlight {
+				color: $white;
+			}
+
+			.vs__no-options {
+				color: $grey-dark;
+			}
+		}
+	}
+}
+
+@include dark {
+	.v-select {
+		.vs__dropdown-toggle {
+			background-color: $grey;
+			box-shadow: 0 2px 4px $black;
+	
+			.vs__selected-options {
+				.vs__selected {
+					color: $grey-darkest;
+				}
+
+				input {
+					color: $grey-darkest;
+					transition: color .2s;
+	
+					&::placeholder {
+						color: $grey-dark;
+					}
+					&:focus {
+						color: $primary;
+					}
+				}
+			}
+		}
+
+		.vs__dropdown-menu {
+			background-color: $grey;
+
+			.vs__dropdown-option {
+				color: $grey-darkest;
+			}
+	
+			.vs__dropdown-option--highlight {
+				color: $white;
+			}
+
+			.vs__no-options {
+				color: $grey-darkest;
+			}
+		}
+	}
+}
